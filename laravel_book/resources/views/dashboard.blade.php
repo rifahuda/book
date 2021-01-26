@@ -668,8 +668,8 @@
 
     <script>
         $( document ).ready(function() {
-            
-            cekAkun();
+            $('#myModal').modal('show');
+            // cekAkun();
 
         });
 
