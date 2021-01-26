@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\NamaController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,9 +21,12 @@ Route::get('/', function () {
 Route::get('register',[LoginController::class, 'create']);
 Route::get('cekakun',[LoginController::class, 'cekakun'])->name('cekakun');
 Route::post('register',[LoginController::class, 'store'])->name('register');
+
 Route::post('login',[LoginController::class, 'authenticate']);
 Route::get('logout',[LoginController::class, 'logout'])->name('logout');
-
 Route::get('dashboard',function(){
     return view('dashboard');
 });
+
+
+// Route::get('/dashboard','NamaController@dashboard');

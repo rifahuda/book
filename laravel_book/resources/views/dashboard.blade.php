@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Empty Page</title>
+    <title>Selamat Datang di Web Book</title>
 
     <link href="{{asset('assetsadmin/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('assetsadmin/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
@@ -168,12 +168,17 @@
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element"> <span>
-                                <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                              
                             </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David
-                                            Williams</strong>
-                                    </span> <span class="text-muted text-xs block">Art Director <b
+                                <!-- <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David
+                                            Williams </strong>
+                                    </span> -->
+                                    <span class="block m-t-xs"> <strong class="font-bold">
+                                             </strong>
+                                    </span>
+                                    
+                                     <span class="text-muted text-xs block">Art Director <b
                                             class="caret"></b></span> </span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li><a href="profile.html">Profile</a></li>
@@ -184,10 +189,10 @@
                             </ul>
                         </div>
                         <div class="logo-element">
-                            IN+
+                            +
                         </div>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span>
                             <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
@@ -405,7 +410,7 @@
                     </li>
                     <li class="special_link">
                         <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">Package</span></a>
-                    </li>
+                    </li> -->
                 </ul>
 
             </div>
@@ -426,9 +431,10 @@
                     </div>
                     <ul class="nav navbar-top-links navbar-right">
                         <li>
-                            <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+                        <h3><span class="m-r-sm text-muted welcome-message">Selamat Datang di Website Book</span></h3>
+                            
                         </li>
-                        <li class="dropdown">
+                        <!-- <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
                                 <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
                             </a>
@@ -482,8 +488,8 @@
                                     </div>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="dropdown">
+                        </li> -->
+                        <!-- <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
                                 <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
                             </a>
@@ -524,12 +530,12 @@
                                     </div>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
 
 
                         <li>
                             <a href="{{route('logout')}}">
-                                <i class="fa fa-sign-out"></i> Log out
+                                <i class="fa fa-sign-out" ></i> Log out
                             </a>
                         </li>
                     </ul>
@@ -538,35 +544,26 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-sm-4">
-                    <h2>This is main title</h2>
+                    <h2>Selamat Datang !</h2>
                     <ol class="breadcrumb">
                         <li>
-                            <a href="index.html">This is</a>
+                            <a href="index.html">Book</a>
                         </li>
                         <li class="active">
-                            <strong>Breadcrumb</strong>
+                            <strong>Book</strong>
                         </li>
                     </ol>
                 </div>
                 <div class="col-sm-8">
                     <div class="title-action">
 
-                        <a href="" class="btn btn-primary">This is action area</a>
+                        <a href="#myModal" data-toggle="modal" class="btn btn-primary">Edit Profile</a>
+        
                     </div>
                 </div>
             </div>
+       
 
-            <div class="wrapper wrapper-content">
-                <div class="middle-box text-center animated fadeInRightBig">
-                    <h3 class="font-bold">This is page content</h3>
-                    <div class="error-desc">
-                        You can create here any grid layout you want. And any variation layout you imagine:) Check out
-                        main dashboard and other site. It use many different layout.
-                        <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
-                        <br /><a href="index.html" class="btn btn-primary m-t">Dashboard</a>
-                    </div>
-                </div>
-            </div>
 
             <!-- Modal -->
             <div id="myModal" class="modal fade" role="dialog">
@@ -576,7 +573,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Peringatan</h4>
+                            <!-- <h4 class="modal-title">Peringatan !</h4> -->
                         </div>
                         <div class="modal-body">
                             <h4>Demi keamanan silahkan mengganti username dan password anda.</h4>
@@ -613,11 +610,11 @@
                 </div>
             </div>
             <div class="footer">
-                <div class="pull-right">
+                <!-- <div class="pull-right">
                     10GB of <strong>250GB</strong> Free.
-                </div>
+                </div> -->
                 <div>
-                    <strong>Copyright</strong> Example Company &copy; 2014-2015
+                    <strong>Copyright</strong> BookWeb &copy; 2021
                 </div>
             </div>
 
@@ -668,7 +665,7 @@
 
     <script>
         $( document ).ready(function() {
-            $('#myModal').modal('show');
+            // $('#myModal').modal('show');
             // cekAkun();
 
         });
