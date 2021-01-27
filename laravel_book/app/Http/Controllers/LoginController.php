@@ -99,4 +99,6 @@ class LoginController extends Controller {
 		$request->session()->forget('user');
 		return redirect('/');
 	}
+
+	
 }
