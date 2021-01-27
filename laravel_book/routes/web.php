@@ -18,15 +18,21 @@ use App\Http\Controllers\NamaController;
 Route::get('/', function () {
     return view('auth.login');
 });
+
+
 Route::get('register',[LoginController::class, 'create']);
 Route::get('cekakun',[LoginController::class, 'cekakun'])->name('cekakun');
 Route::post('register',[LoginController::class, 'store'])->name('register');
 
 Route::post('login',[LoginController::class, 'authenticate']);
 Route::get('logout',[LoginController::class, 'logout'])->name('logout');
+
+
+
 Route::get('dashboard',function(){
     return view('dashboard');
 });
 
+Route::resource('dashboard', NamaController::class);
 
 // Route::get('/dashboard','NamaController@dashboard');
