@@ -54,7 +54,7 @@
                         </li>     
 
                             <li class="dropdown notification-list">
-                                <a href="{{route('logout')}}" class="nav-link right-bar-toggle waves-effect waves-light">
+                                <a href="{{route('logout')}}" class="nav-link right-bar-toggle waves-effect waves-light text-white">
                                     <i class="fe-log-out"></i>
                                     <span>Logout</span>
                                 </a>
@@ -85,75 +85,6 @@
                            
 
                                
-
-                                <!-- <li class="has-submenu">
-                                    <a href="#">
-                                        <i class="fe-layers"></i>Components <div class="arrow-down"></div></a>
-                                    <ul class="submenu">
-                                        <li class="has-submenu">
-                                            <a href="#">Icons <div class="arrow-down"></div></a>
-                                            <ul class="submenu">
-                                                <li><a href="icons-colored.html">Colored Icons</a></li>
-                                                <li><a href="icons-materialdesign.html">Material Design</a></li>
-                                                <li><a href="icons-dripicons.html">Dripicons</a></li>
-                                                <li><a href="icons-fontawesome.html">Font awesome</a></li>
-                                                <li><a href="icons-feather.html">Feather Icons</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-submenu">
-                                            <a href="#">Forms <div class="arrow-down"></div></a>
-                                            <ul class="submenu">
-                                                <li><a href="form-elements.html">Form Elements</a></li>
-                                                <li><a href="form-advanced.html">Form Advanced</a></li>
-                                                <li><a href="form-validation.html">Form Validation</a></li>
-                                                <li><a href="form-pickers.html">Form Pickers</a></li>
-                                                <li><a href="form-wizard.html">Form Wizard</a></li>
-                                                <li><a href="form-mask.html">Form Masks</a></li>
-                                                <li><a href="form-summernote.html">Summernote</a></li>
-                                                <li><a href="form-quilljs.html">Quilljs Editor</a></li>
-                                                <li><a href="form-uploads.html">Multiple File Upload</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-submenu">
-                                            <a href="#">Tables <div class="arrow-down"></div></a>
-                                            <ul class="submenu">
-                                                <li><a href="tables-basic.html">Basic Tables</a></li>
-                                                <li><a href="tables-layouts.html">Tables Layouts</a></li>
-                                                <li><a href="tables-datatable.html">Data Table</a></li>
-                                                <li><a href="tables-responsive.html">Responsive Table</a></li>
-                                                <li><a href="tables-tablesaw.html">Tablesaw Table</a></li>
-                                                <li><a href="tables-editable.html">Editable Table</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-submenu">
-                                            <a href="#">Graphs <div class="arrow-down"></div></a>
-                                            <ul class="submenu">
-                                                <li><a href="charts-flot.html">Flot Charts</a></li>
-                                                <li><a href="charts-morris.html">Morris Charts</a></li>
-                                                <li><a href="charts-google.html">Google Charts</a></li>
-                                                <li><a href="charts-chartist.html">Chartist Charts</a></li>
-                                                <li><a href="charts-chartjs.html">Chartjs Charts</a></li>
-                                                 <li><a href="charts-c3.html">C3 Charts</a></li> -->
-                                                <!-- <li><a href="charts-sparkline.html">Sparkline Charts</a></li>
-                                                <li><a href="charts-knob.html">Jquery Knob</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-submenu">
-                                            <a href="#">Maps <div class="arrow-down"></div></a>
-                                            <ul class="submenu">
-                                                <li>
-                                                    <a href="maps-google.html">Google Maps</a>
-                                                </li>
-                                                <li>
-                                                    <a href="maps-vector.html">Vector Maps</a>
-                                                </li>
-                                                <li>
-                                                    <a href="maps-mapael.html">Mapael Maps</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li> --> 
 
                                
 
@@ -214,7 +145,8 @@
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapseOne" class="card-header bg-primary" style="background: cadetblue !important;" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
+                                        <div id="collapseOne" class="collapse">
+                                        <div class="card-header bg-primary" style="background: cadetblue !important;" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Link Refrensi
@@ -232,7 +164,7 @@
                                             </div>
                                         </div>
 
-                                        <div id="collapseOne" class="card-header bg-primary" style="background: darkcyan!important;" data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
+                                        <div class="card-header bg-primary" style="background: darkcyan!important;" data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Borang
@@ -249,7 +181,7 @@
                                                 <p class="mb-0">Borang</p>
                                             </div>
                                         </div>
-                                        <div id="collapseOne" class="card-header bg-primary" style="background: darkseagreen!important;" data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
+                                        <div class="card-header bg-primary" style="background: darkseagreen!important;" data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Template
@@ -266,7 +198,7 @@
                                                 <p class="mb-0">Template</p>
                                             </div>
                                         </div>
-                                        <div id="collapseOne" class="card-header bg-primary" style="background:peachpuff !important;" data-toggle="collapse" data-target="#collapseOneFour" aria-expanded="false" >
+                                        <div class="card-header bg-primary" style="background:peachpuff !important;" data-toggle="collapse" data-target="#collapseOneFour" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Play Card
@@ -283,7 +215,7 @@
                                                 <p class="mb-0">Play Card</p>
                                             </div>
                                         </div>
-                                        <div id="collapseOne" class="card-header bg-primary" style="background:palegoldenrod !important;" data-toggle="collapse" data-target="#collapseOneFive" aria-expanded="false" >
+                                        <div class="card-header bg-primary" style="background:palegoldenrod !important;" data-toggle="collapse" data-target="#collapseOneFive" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Video
@@ -300,15 +232,15 @@
                                                 <p class="mb-0">Video</p>
                                             </div>
                                         </div>
-                                   
+                                   </div>
                                     </div>
                                    
                                    
                                     
                                     <div class="card mb-2">
-                                        <div class="card-header bg-info" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo>
+                                        <div class="card-header bg-info" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                             <h4 class="card-title font-14 mb-0">
-                                                <a href="#" class="text-white collapsed" ">
+                                                <a href="#" class="text-white collapsed">
                                                    SERVICE
                                                 </a>
                                             </h4>
@@ -341,19 +273,20 @@
                             <!-- <h4 class="modal-title">Peringatan !</h4> -->
                         </div>
                         <div class="modal-body">
-                            <h4>Edit Password</h4>
+                            <h4>Edit Profile</h4>
                             <hr>
                             <form id="formregist">
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">Password</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control-plaintext" id="password">
-                                    </div>
-                                </div>
+                              
                                 <div class="form-group row">
                                     <label for="staticEmail" class="col-sm-2 col-form-label">Username</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control-plaintext" id="username">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="staticEmail" class="col-sm-2 col-form-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control-plaintext" id="password">
                                     </div>
                                 </div>
                               
@@ -368,6 +301,9 @@
                     </div>
 
                 </div>
+                </div>
+
+                
                 <div id="success_tic" class="modal fade" role="dialog">
         <div class="modal-dialog">
       
@@ -375,9 +311,9 @@
           <div class="modal-content">
             <a class="close" href="#" data-dismiss="modal">&times;</a>
             <div class="page-body">
-          <div class="head">  
-            <h3 style="margin-top:5px;">Selamat Datang</h3>
-            <h4>Selamat Bergabung</h4>
+          <div class="head justify-content-between" >  
+            <h3 style="text-align:center;">Berhasil Ditambah</h3>
+        
           </div>
       
         <h1 style="text-align:center;"><div class="checkmark-circle">
