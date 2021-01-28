@@ -30,7 +30,7 @@ Route::get('logout',[LoginController::class, 'logout'])->name('logout');
 
 
 Route::get('dashboard',function(){
-    return view('beranda');
+    return view('dashboard');
 });
 
 // Route::get('haiyow',function(){

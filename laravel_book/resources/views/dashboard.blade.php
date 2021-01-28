@@ -1,576 +1,337 @@
 
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Dashboard | Codefox - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-<head>
+        <!-- Bootstrap select pluings -->
+        <link href="{{asset('codefox/libs/bootstrap-select/bootstrap-select.min.css')}}" rel="stylesheet" type="text/css" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- c3 plugin css -->
+        <!-- <link rel="stylesheet" type="text/css" href="assets/libs/c3/c3.min.css"> -->
 
-    <title>Selamat Datang di Web Book</title>
+        <!-- App css -->
+        <link href="{{asset('codefox/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+        <link href="{{asset('codefox/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('codefox/css/app.min.css')}}" rel="stylesheet" type="text/css"  id="app-stylesheet" />
 
-    <link href="{{asset('assetsadmin/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assetsadmin/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
+    </head>
 
-    <link href="{{asset('assetsadmin/css/animate.css')}}" rel="stylesheet">
-    <link href="{{asset('assetsadmin/css/style.css')}}" rel="stylesheet">
-    <style>
-        #success_tic .page-body{
-  max-width:300px;
-  background-color:#FFFFFF;
-  margin:10% auto;
-}
- #success_tic .page-body .head{
-  text-align:center;
-}
-/* #success_tic .tic{
-  font-size:186px;
-} */
-#success_tic .close{
-      opacity: 1;
-    position: absolute;
-    right: 0px;
-    font-size: 30px;
-    padding: 3px 15px;
-  margin-bottom: 10px;
-}
-#success_tic .checkmark-circle {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-}
-.checkmark-circle .background {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #1ab394;
-  position: absolute;
-}
-#success_tic .checkmark-circle .checkmark {
-  border-radius: 5px;
-}
-#success_tic .checkmark-circle .checkmark.draw:after {
-  -webkit-animation-delay: 300ms;
-  -moz-animation-delay: 300ms;
-  animation-delay: 300ms;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-name: checkmark;
-  -moz-animation-name: checkmark;
-  animation-name: checkmark;
-  -webkit-transform: scaleX(-1) rotate(135deg);
-  -moz-transform: scaleX(-1) rotate(135deg);
-  -ms-transform: scaleX(-1) rotate(135deg);
-  -o-transform: scaleX(-1) rotate(135deg);
-  transform: scaleX(-1) rotate(135deg);
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-#success_tic .checkmark-circle .checkmark:after {
-  opacity: 1;
-  height: 75px;
-  width: 37.5px;
-  -webkit-transform-origin: left top;
-  -moz-transform-origin: left top;
-  -ms-transform-origin: left top;
-  -o-transform-origin: left top;
-  transform-origin: left top;
-  border-right: 15px solid #fff;
-  border-top: 15px solid #fff;
-  border-radius: 2.5px !important;
-  content: '';
-  left: 35px;
-  top: 80px;
-  position: absolute;
-}
+    <body data-layout="horizontal">
 
-@-webkit-keyframes checkmark {
-  0% {
-    height: 0;
-    width: 0;
-    opacity: 1;
-  }
-  20% {
-    height: 0;
-    width: 37.5px;
-    opacity: 1;
-  }
-  40% {
-    height: 75px;
-    width: 37.5px;
-    opacity: 1;
-  }
-  100% {
-    height: 75px;
-    width: 37.5px;
-    opacity: 1;
-  }
-}
-@-moz-keyframes checkmark {
-  0% {
-    height: 0;
-    width: 0;
-    opacity: 1;
-  }
-  20% {
-    height: 0;
-    width: 37.5px;
-    opacity: 1;
-  }
-  40% {
-    height: 75px;
-    width: 37.5px;
-    opacity: 1;
-  }
-  100% {
-    height: 75px;
-    width: 37.5px;
-    opacity: 1;
-  }
-}
-@keyframes checkmark {
-  0% {
-    height: 0;
-    width: 0;
-    opacity: 1;
-  }
-  20% {
-    height: 0;
-    width: 37.5px;
-    opacity: 1;
-  }
-  40% {
-    height: 75px;
-    width: 37.5px;
-    opacity: 1;
-  }
-  100% {
-    height: 75px;
-    width: 37.5px;
-    opacity: 1;
-  }
-}
-    </style>
-</head>
+        <!-- Begin page -->
+        <div id="wrapper">
 
-<body class="">
+            
+            <!-- Navigation Bar-->
+            <header id="topnav">
+                <!-- Topbar Start -->
+                <div class="navbar-custom">
+                    <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+                    <h3 class="text-white">Selamat Datang di Website Book</h3>
+                        <ul class="list-unstyled topnav-menu float-right mb-0">
 
-    <div id="wrapper">
-
-        <nav class="navbar-default navbar-static-side" role="navigation">
-            <div class="sidebar-collapse">
-                <ul class="nav metismenu" id="side-menu">
-                    <li class="nav-header">
-                        <div class="dropdown profile-element"> <span>
-                              
-                            </span>
-                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">
-                             <h2>{{Session::get('user')->u_username}}</h2>
-                                </strong>
-                                    </span> 
-                                    <!-- <span class="block m-t-xs"> <strong class="font-bold">
-                                             </strong>
-                                    </span>
-                                    
-                                     <span class="text-muted text-xs block">Art Director <b
-                                            class="caret"></b></span> </span> </a>
-                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a href="profile.html">Profile</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <li><a href="mailbox.html">Mailbox</a></li>
-                                <li class="divider"></li>
-                                <li><a href="{{route('logout')}}">Logout</a></li>
-                            </ul> -->
-                        </div> 
-                        <div class="logo-element">
-                            +
-                        </div>
-                    </li>
-                    <li>
-                        <a href="berandow"><i class="fa fa-th-large"></i> <span class="nav-label">Beranda</span>
-                        
-                        <!-- <a href="{{url('haiyow')}}"><i class="fa fa-pie-chart"></i> <span class="nav-label">haiyo</span> -->
-                        <a href="haiyow"><i class="fa fa-pie-chart"></i> <span class="nav-label">Buku</span>
-                        </a>
-                    
-                            <!-- <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="index.html">Dashboard v.1</a></li>
-                            <li><a href="dashboard_2.html">Dashboard v.2</a></li>
-                            <li><a href="dashboard_3.html">Dashboard v.3</a></li>
-                            <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
-                            <li><a href="dashboard_5.html">Dashboard v.5 <span
-                                        class="label label-primary pull-right">NEW</span></a></li>
-                        </ul> -->
-                    </li>
-                    <!-- <li>
-                        <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span
-                                class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="graph_flot.html">Flot Charts</a></li>
-                            <li><a href="graph_morris.html">Morris.js Charts</a></li>
-                            <li><a href="graph_rickshaw.html">Rickshaw Charts</a></li>
-                            <li><a href="graph_chartjs.html">Chart.js</a></li>
-                            <li><a href="graph_chartist.html">Chartist</a></li>
-                            <li><a href="c3.html">c3 charts</a></li>
-                            <li><a href="graph_peity.html">Peity Charts</a></li>
-                            <li><a href="graph_sparkline.html">Sparkline Charts</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox
-                            </span><span class="label label-warning pull-right">16/24</span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="mailbox.html">Inbox</a></li>
-                            <li><a href="mail_detail.html">Email view</a></li>
-                            <li><a href="mail_compose.html">Compose email</a></li>
-                            <li><a href="email_template.html">Email templates</a></li>
-                        </ul>
-                    </li> -->
-                    
-                    <!-- <li>
-                        <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span
-                                class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="form_basic.html">Basic form</a></li>
-                            <li><a href="form_advanced.html">Advanced Plugins</a></li>
-                            <li><a href="form_wizard.html">Wizard</a></li>
-                            <li><a href="form_file_upload.html">File Upload</a></li>
-                            <li><a href="form_editors.html">Text Editor</a></li>
-                            <li><a href="form_markdown.html">Markdown</a></li>
-                        </ul>
-                    </li> -->
-                    <!-- <li>
-                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span> <span
-                                class="pull-right label label-primary">SPECIAL</span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="contacts.html">Contacts</a></li>
-                            <li><a href="profile.html">Profile</a></li>
-                            <li><a href="profile_2.html">Profile v.2</a></li>
-                            <li><a href="contacts_2.html">Contacts v.2</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="project_detail.html">Project detail</a></li>
-                            <li><a href="teams_board.html">Teams board</a></li>
-                            <li><a href="social_feed.html">Social feed</a></li>
-                            <li><a href="clients.html">Clients</a></li>
-                            <li><a href="full_height.html">Outlook view</a></li>
-                            <li><a href="vote_list.html">Vote list</a></li>
-                            <li><a href="file_manager.html">File manager</a></li>
-                            <li><a href="calendar.html">Calendar</a></li>
-                            <li><a href="issue_tracker.html">Issue tracker</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="article.html">Article</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="timeline.html">Timeline</a></li>
-                            <li><a href="pin_board.html">Pin board</a></li>
-                        </ul>
-                    </li>
-                    <li class="active">
-                        <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span
-                                class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="search_results.html">Search results</a></li>
-                            <li><a href="lockscreen.html">Lockscreen</a></li>
-                            <li><a href="invoice.html">Invoice</a></li>
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="login_two_columns.html">Login v.2</a></li>
-                            <li><a href="forgot_password.html">Forget password</a></li>
-                            <li><a href="register.html">Register</a></li>
-                            <li><a href="404.html">404 Page</a></li>
-                            <li><a href="500.html">500 Page</a></li>
-                            <li class="active"><a href="empty_page.html">Empty page</a></li>
-                        </ul>
-                    </li> -->
-                    <!-- <li>
-                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span
-                                class="label label-info pull-right">NEW</span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="toastr_notifications.html">Notification</a></li>
-                            <li><a href="nestable_list.html">Nestable list</a></li>
-                            <li><a href="agile_board.html">Agile board</a></li>
-                            <li><a href="timeline_2.html">Timeline v.2</a></li>
-                            <li><a href="diff.html">Diff</a></li>
-                            <li><a href="i18support.html">i18 support</a></li>
-                            <li><a href="sweetalert.html">Sweet alert</a></li>
-                            <li><a href="idle_timer.html">Idle timer</a></li>
-                            <li><a href="truncate.html">Truncate</a></li>
-                            <li><a href="spinners.html">Spinners</a></li>
-                            <li><a href="tinycon.html">Live favicon</a></li>
-                            <li><a href="google_maps.html">Google maps</a></li>
-                            <li><a href="code_editor.html">Code editor</a></li>
-                            <li><a href="modal_window.html">Modal window</a></li>
-                            <li><a href="clipboard.html">Clipboard</a></li>
-                            <li><a href="forum_main.html">Forum view</a></li>
-                            <li><a href="validation.html">Validation</a></li>
-                            <li><a href="tree_view.html">Tree view</a></li>
-                            <li><a href="loading_buttons.html">Loading buttons</a></li>
-                            <li><a href="chat_view.html">Chat view</a></li>
-                            <li><a href="masonry.html">Masonry</a></li>
-                            <li><a href="tour.html">Tour</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span
-                                class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="typography.html">Typography</a></li>
-                            <li><a href="icons.html">Icons</a></li>
-                            <li><a href="draggable_panels.html">Draggable Panels</a></li>
-                            <li><a href="resizeable_panels.html">Resizeable Panels</a></li>
-                            <li><a href="buttons.html">Buttons</a></li>
-                            <li><a href="video.html">Video</a></li>
-                            <li><a href="tabs_panels.html">Panels</a></li>
-                            <li><a href="tabs.html">Tabs</a></li>
-                            <li><a href="notifications.html">Notifications & Tooltips</a></li>
-                            <li><a href="badges_labels.html">Badges, Labels, Progress</a></li>
-                        </ul>
-                    </li> -->
-
-                    <!-- <li>
-                        <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">Grid
-                                options</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span
-                                class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="table_basic.html">Static Tables</a></li>
-                            <li><a href="table_data_tables.html">Data Tables</a></li>
-                            <li><a href="table_foo_table.html">Foo Tables</a></li>
-                            <li><a href="jq_grid.html">jqGrid</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span
-                                class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="ecommerce_products_grid.html">Products grid</a></li>
-                            <li><a href="ecommerce_product_list.html">Products list</a></li>
-                            <li><a href="ecommerce_product.html">Product edit</a></li>
-                            <li><a href="ecommerce_product_detail.html">Product detail</a></li>
-                            <li><a href="ecommerce-cart.html">Cart</a></li>
-                            <li><a href="ecommerce-orders.html">Orders</a></li>
-                            <li><a href="ecommerce_payments.html">Credit Card form</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span
-                                class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="basic_gallery.html">Lightbox Gallery</a></li>
-                            <li><a href="slick_carousel.html">Slick Carousel</a></li>
-                            <li><a href="carousel.html">Bootstrap Carousel</a></li>
-
-                        </ul>
-                    </li> -->
-                    <!-- <li>
-                        <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span
-                                class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li>
-                                <a href="#">Third Level <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-
-                                </ul>
+                            <li class="dropdown notification-list">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
                             </li>
-                            <li><a href="#">Second Level Item</a></li>
-                            <li>
-                                <a href="#">Second Level Item</a></li>
-                            <li>
-                                <a href="#">Second Level Item</a></li>
-                        </ul>
-                    </li> -->
-                    <!-- <li>
-                        <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations
-                            </span><span class="label label-info pull-right">62</span></a>
-                    </li>
-                    <li class="landing_link">
-                        <a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span
-                                class="nav-label">Landing Page</span> <span
-                                class="label label-warning pull-right">NEW</span></a>
-                    </li>
-                    <li class="special_link">
-                        <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">Package</span></a>
-                    </li>  -->
-                </ul>
+                        <li >                           
+                            <a href="#myModal" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light">Edit Profile</a>
+                        </li>     
 
-            </div>
-        </nav>
-
-        <div id="page-wrapper" class="gray-bg">
-            <div class="row border-bottom">
-                <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
-                    <div class="navbar-header">
-                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i
-                                class="fa fa-bars"></i> </a>
-                        <form role="search" class="navbar-form-custom" action="search_results.html">
-                            <div class="form-group">
-                                <input type="text" placeholder="Search for something..." class="form-control"
-                                    name="top-search" id="top-search">
-                            </div>
-                        </form>
-                    </div>
-                    <ul class="nav navbar-top-links navbar-right">
-                        <li>
-                        <h3><span class="m-r-sm text-muted welcome-message">Selamat Datang di Website Book</span></h3>
-                            
-                        </li>
-                        <!-- <li class="dropdown">
-                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-messages">
-                                <li>
-                                    <div class="dropdown-messages-box">
-                                        <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="img/a7.jpg">
-                                        </a>
-                                        <div class="media-body">
-                                            <small class="pull-right">46h ago</small>
-                                            <strong>Mike Loreipsum</strong> started following <strong>Monica
-                                                Smith</strong>. <br>
-                                            <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="dropdown-messages-box">
-                                        <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="img/a4.jpg">
-                                        </a>
-                                        <div class="media-body ">
-                                            <small class="pull-right text-navy">5h ago</small>
-                                            <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica
-                                                Smith</strong>. <br>
-                                            <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="dropdown-messages-box">
-                                        <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="img/profile.jpg">
-                                        </a>
-                                        <div class="media-body ">
-                                            <small class="pull-right">23h ago</small>
-                                            <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
-                                            <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="text-center link-block">
-                                        <a href="mailbox.html">
-                                            <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li> -->
-                        <!-- <li class="dropdown">
-                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-alerts">
-                                <li>
-                                    <a href="mailbox.html">
-                                        <div>
-                                            <i class="fa fa-envelope fa-fw"></i> You have 16 messages
-                                            <span class="pull-right text-muted small">4 minutes ago</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="profile.html">
-                                        <div>
-                                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                            <span class="pull-right text-muted small">12 minutes ago</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="grid_options.html">
-                                        <div>
-                                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                            <span class="pull-right text-muted small">4 minutes ago</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="text-center link-block">
-                                        <a href="notifications.html">
-                                            <strong>See All Alerts</strong>
-                                            <i class="fa fa-angle-right"></i>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li> -->
-
-
-                        <li>
+                            <li class="dropdown notification-list">
+                                <a href="{{route('logout')}}" class="nav-link right-bar-toggle waves-effect waves-light">
+                                    <i class="fe-log-out"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                            <!-- <li>
                             <a href="{{route('logout')}}">
                                 <i class="fa fa-sign-out" ></i> Log out
                             </a>
-                        </li>
-                    </ul>
+                        </li> -->
 
-                </nav>
-            </div>
-            <div class="row wrapper border-bottom white-bg page-heading">
-                
-                
-                
-                <!-- <div class="col-sm-4">
-                     <h2>Selamat Datang !</h2> -->
-                    <!-- <h2> @yield('judul') </h2> -->
-                    <!-- <ol class="breadcrumb">
-                        <li>
-                            <a href="index.html">Book</a>
-                        </li>
-                        <li class="active">
-                            <strong>Book</strong>
-                        </li>
-                    </ol> -->
+                        </ul>
+
+                        <!-- LOGO -->
+                        
+
+                    </div>
+                </div>
+                <!-- end Topbar -->
+
+                <div class="topbar-menu">
+                    <div class="container-fluid">
+                        <div id="navigation">
+                            <!-- Navigation Menu-->
+                            <ul class="navigation-menu">
+
+                               
+
+                           
+
+                               
+
+                                <!-- <li class="has-submenu">
+                                    <a href="#">
+                                        <i class="fe-layers"></i>Components <div class="arrow-down"></div></a>
+                                    <ul class="submenu">
+                                        <li class="has-submenu">
+                                            <a href="#">Icons <div class="arrow-down"></div></a>
+                                            <ul class="submenu">
+                                                <li><a href="icons-colored.html">Colored Icons</a></li>
+                                                <li><a href="icons-materialdesign.html">Material Design</a></li>
+                                                <li><a href="icons-dripicons.html">Dripicons</a></li>
+                                                <li><a href="icons-fontawesome.html">Font awesome</a></li>
+                                                <li><a href="icons-feather.html">Feather Icons</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="#">Forms <div class="arrow-down"></div></a>
+                                            <ul class="submenu">
+                                                <li><a href="form-elements.html">Form Elements</a></li>
+                                                <li><a href="form-advanced.html">Form Advanced</a></li>
+                                                <li><a href="form-validation.html">Form Validation</a></li>
+                                                <li><a href="form-pickers.html">Form Pickers</a></li>
+                                                <li><a href="form-wizard.html">Form Wizard</a></li>
+                                                <li><a href="form-mask.html">Form Masks</a></li>
+                                                <li><a href="form-summernote.html">Summernote</a></li>
+                                                <li><a href="form-quilljs.html">Quilljs Editor</a></li>
+                                                <li><a href="form-uploads.html">Multiple File Upload</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="#">Tables <div class="arrow-down"></div></a>
+                                            <ul class="submenu">
+                                                <li><a href="tables-basic.html">Basic Tables</a></li>
+                                                <li><a href="tables-layouts.html">Tables Layouts</a></li>
+                                                <li><a href="tables-datatable.html">Data Table</a></li>
+                                                <li><a href="tables-responsive.html">Responsive Table</a></li>
+                                                <li><a href="tables-tablesaw.html">Tablesaw Table</a></li>
+                                                <li><a href="tables-editable.html">Editable Table</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="#">Graphs <div class="arrow-down"></div></a>
+                                            <ul class="submenu">
+                                                <li><a href="charts-flot.html">Flot Charts</a></li>
+                                                <li><a href="charts-morris.html">Morris Charts</a></li>
+                                                <li><a href="charts-google.html">Google Charts</a></li>
+                                                <li><a href="charts-chartist.html">Chartist Charts</a></li>
+                                                <li><a href="charts-chartjs.html">Chartjs Charts</a></li>
+                                                 <li><a href="charts-c3.html">C3 Charts</a></li> -->
+                                                <!-- <li><a href="charts-sparkline.html">Sparkline Charts</a></li>
+                                                <li><a href="charts-knob.html">Jquery Knob</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="#">Maps <div class="arrow-down"></div></a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="maps-google.html">Google Maps</a>
+                                                </li>
+                                                <li>
+                                                    <a href="maps-vector.html">Vector Maps</a>
+                                                </li>
+                                                <li>
+                                                    <a href="maps-mapael.html">Mapael Maps</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li> --> 
+
+                               
+
+                               
+
+                            </ul>
+                            <!-- End navigation menu -->
+
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- end #navigation -->
+                    </div>
+                    <!-- end container -->
+                </div>
+                <!-- end navbar-custom -->
+
+            </header>
+            <!-- End Navigation Bar-->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                      
+                                    </div>
+                                 
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title --> 
+
+                        
+                      
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row justify-content-center text-center" >
+                            <div class="col-lg-10">
+                            
                   
-                 
-                @yield('konten')
-            </div>
-       
+                                <div class="accordion" id="accordion-test">
+                                    <div class="card mb-2">
+                                        <div class="card-header bg-primary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" >
+                                            <h4 class="card-title font-14 mb-0">
+                                                <a href="#" class="text-white collapsed" >
+                                                    REFRENSI
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="card-header bg-primary" style="background:aquamarine !important;" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
+                                            <h4 class="card-title font-14 mb-0">
+                                                <a href="#" class="text-white collapsed" >
+                                                    Link Refrensi
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOneOne" class="collapse" data-parent="#accordion-test" style="">
+                                            <div class="card-body">
+                                                <p class="mb-0">Refrensi</p>
+                                                <p class="mb-0">Refrensi</p>
+                                                <p class="mb-0">Refrensi</p>
+                                                <p class="mb-0">Refrensi</p>
+                                                <p class="mb-0">Refrensi</p>
+                                                <p class="mb-0">Refrensi</p>
+                                            </div>
+                                        </div>
 
+                                        <div id="collapseOne" class="card-header bg-primary" style="background:cadetblue !important;" data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
+                                            <h4 class="card-title font-14 mb-0">
+                                                <a href="#" class="text-white collapsed" >
+                                                    Borang
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOneTwo" class="collapse" data-parent="#accordion-test" style="">
+                                            <div class="card-body">
+                                                <p class="mb-0">Borang</p>
+                                                <p class="mb-0">Borang</p>
+                                                <p class="mb-0">Borang</p>
+                                                <p class="mb-0">Borang</p>
+                                                <p class="mb-0">Borang</p>
+                                                <p class="mb-0">Borang</p>
+                                            </div>
+                                        </div>
+                                        <div id="collapseOne" class="card-header bg-primary" style="background:darkcyan !important;" data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
+                                            <h4 class="card-title font-14 mb-0">
+                                                <a href="#" class="text-white collapsed" >
+                                                    Template
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOneThree" class="collapse" data-parent="#accordion-test" style="">
+                                            <div class="card-body">
+                                                <p class="mb-0">Template</p>
+                                                <p class="mb-0">Template</p>
+                                                <p class="mb-0">Template</p>
+                                                <p class="mb-0">Template</p>
+                                                <p class="mb-0">Template</p>
+                                                <p class="mb-0">Template</p>
+                                            </div>
+                                        </div>
+                                        <div id="collapseOne" class="card-header bg-primary" style="background:darkseagreen !important;" data-toggle="collapse" data-target="#collapseOneFour" aria-expanded="false" >
+                                            <h4 class="card-title font-14 mb-0">
+                                                <a href="#" class="text-white collapsed" >
+                                                    Play Card
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOneFour" class="collapse" data-parent="#accordion-test" style="">
+                                            <div class="card-body">
+                                                <p class="mb-0">Play Card</p>
+                                                <p class="mb-0">Play Card</p>
+                                                <p class="mb-0">Play Card</p>
+                                                <p class="mb-0">Play Card</p>
+                                                <p class="mb-0">Play Card</p>
+                                                <p class="mb-0">Play Card</p>
+                                            </div>
+                                        </div>
+                                        <div id="collapseOne" class="card-header bg-primary" style="background:palegoldenrod !important;" data-toggle="collapse" data-target="#collapseOneFive" aria-expanded="false" >
+                                            <h4 class="card-title font-14 mb-0">
+                                                <a href="#" class="text-white collapsed" >
+                                                    Video
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOneFive" class="collapse" data-parent="#accordion-test" style="">
+                                            <div class="card-body">
+                                                <p class="mb-0">Video</p>
+                                                <p class="mb-0">Video</p>
+                                                <p class="mb-0">Video</p>
+                                                <p class="mb-0">Video</p>
+                                                <p class="mb-0">Video</p>
+                                                <p class="mb-0">Video</p>
+                                            </div>
+                                        </div>
+                                   
+                                    </div>
+                                   
+                                   
+                                    
+                                    <div class="card mb-2">
+                                        <div class="card-header bg-info" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo>
+                                            <h4 class="card-title font-14 mb-0">
+                                                <a href="#" class="text-white collapsed" ">
+                                                   SERVICE
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" data-parent="#accordion-test" style="">
+                                            <div class="card-body">
+                                                <p class="mb-0">service</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                             
+                            </div>
+                        
+                        </div>
+                        <!-- end row -->
+                        
+                    </div> <!-- end container-fluid -->
 
-            <!-- Modal -->
-            <div id="myModal" class="modal fade" role="dialog">
+                </div> <!-- end content -->
+
+                <div id="myModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
 
                     <!-- Modal content-->
@@ -580,13 +341,13 @@
                             <!-- <h4 class="modal-title">Peringatan !</h4> -->
                         </div>
                         <div class="modal-body">
-                            <h4>Demi keamanan silahkan mengganti username dan password anda.</h4>
+                            <h4>Edit Password</h4>
                             <hr>
                             <form id="formregist">
                                 <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                    <label for="staticEmail" class="col-sm-2 col-form-label">Password</label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control-plaintext" id="email">
+                                        <input type="email" class="form-control-plaintext" id="password">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -595,12 +356,7 @@
                                         <input type="text" class="form-control-plaintext" id="username">
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">Password</label>
-                                    <div class="col-sm-10">
-                                        <input type="password" class="form-control-plaintext" id="password">
-                                    </div>
-                                </div>
+                              
                                 {{-- <div class="col-sm-6"> --}}
 
                                 {{-- </div> --}}
@@ -612,22 +368,7 @@
                     </div>
 
                 </div>
-            </div>
-            <div class="footer">
-                <!-- <div class="pull-right">
-                    10GB of <strong>250GB</strong> Free.
-                </div> -->
-                <div>
-                    <strong>Copyright</strong> BookWeb &copy; 2021
-                </div>
-            </div>
-
-
-
-        </div>
-    </div>
-
-    <div id="success_tic" class="modal fade" role="dialog">
+                <div id="success_tic" class="modal fade" role="dialog">
         <div class="modal-dialog">
       
           <!-- Modal content-->
@@ -650,23 +391,8 @@
       
         </div>
     {{-- Modal --}}
-
-
-
-
-
-    <!-- Mainly scripts -->
     <script src="{{asset('assetsadmin/js/jquery-2.1.1.js')}}"></script>
-    <script src="{{asset('assetsadmin/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('assetsadmin/js/plugins/metisMenu/jquery.metisMenu.js')}}"></script>
-    <script src="{{asset('assetsadmin/js/plugins/slimscroll/jquery.slimscroll.min.js')}}"></script>
-
-    <!-- Custom and plugin javascript -->
-    <script src="{{asset('assetsadmin/js/inspinia.js')}}"></script>
-    <script src="{{asset('assetsadmin/js/plugins/pace/pace.min.js')}}"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
         $( document ).ready(function() {
             // $('#myModal').modal('show');
@@ -692,7 +418,8 @@
 
         function register(){
             axios.post('{{route('register')}}', {
-                email: $('#email').val(),
+
+                
                 password: $('#password').val(),
                 username: $('#username').val(),
             })
@@ -708,6 +435,41 @@
         }
     </script>
 
-</body>
+            </div>
 
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                2016 - 2020 &copy; Codefox theme by <a href="">Coderthemes</a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-right footer-links d-none d-sm-block">
+                                    <a href="#">About Us</a>
+                                    <a href="#">Help</a>
+                                    <a href="#">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+
+        <!-- Vendor js -->
+        <script src="{{asset('codefox/js/vendor.min.js')}}"></script>
+
+        <!-- App js -->
+        <script src="{{asset('codefox/js/app.min.js')}}"></script>
+        
+    </body>
 </html>

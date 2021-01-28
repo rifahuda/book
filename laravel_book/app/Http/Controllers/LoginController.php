@@ -23,19 +23,28 @@ class LoginController extends Controller {
 		// dd(!filter_var($request->username, FILTER_VALIDATE_EMAIL));
 		if (!filter_var($request->username, FILTER_VALIDATE_EMAIL)) {
 			// $usename = $request->username;
-			$user = User::where('u_username', $request->username)->get();
+			$user = User::where('u_name', $request->username)->get();
 		} else {
 			// $usename = $request->username;
 			$user = User::where('u_email', $request->username)->get();
 		}
+
 		foreach ($user as $key => $value) {
-			$userPass = Hash::check($request->password, $value->u_password);
+			// $userPass = Hash::check($request->password, $value->u_password);
+			$userPass = User::where($request->password, $value->u_id);
+
+			
+
+
 
 			if ($userPass) {
 
 				$request->session()->regenerate();
 				$request->session()->put('user', User::where('id', $value->id)->first());
 				return redirect()->intended('dashboard');
+			}
+			else{
+				$userPass = User::where('u_pwd', $request->password)->get();
 			}
 			// if (Auth::attempt(['u_email' => $request->username, 'password' => $request->password])) {
 			//     return redirect()->intended('dashboard');
@@ -49,18 +58,18 @@ class LoginController extends Controller {
 		]);
 	}
 
-	public function cekakun(Request $request) {
-		$userId = $request->session()->get('user')->u_email;
-		$user = User::where('u_email', $userId)->count();
-		$statusAkun = false;
-		if ($user > 0) {
-			$statusAkun = true;
-		}
-		return response()->json([
-			'status' => 'success',
-			'akun' => $statusAkun,
-		]);
-	}
+	// public function cekakun(Request $request) {
+	// 	$userId = $request->session()->get('user')->u_email;
+	// 	$user = User::where('u_email', $userId)->count();
+	// 	$statusAkun = false;
+	// 	if ($user > 0) {
+	// 		$statusAkun = true;
+	// 	}
+	// 	return response()->json([
+	// 		'status' => 'success',
+	// 		'akun' => $statusAkun,
+	// 	]);
+	// }
 
 	/**
 	 * Handle an authentication attempt.
@@ -69,18 +78,17 @@ class LoginController extends Controller {
 	 * @return \Illuminate\Http\Response
 	 */
 	public function store(Request $request) {
-		$userId = $request->session()->get('user')->u_anggota_id;
+		$userId = $request->session()->get('user')->id;
 
 		DB::Begintransaction();
 
 		try {
+			$update = User::find($userId);
+			$update ->u_pwd= $request->password;
+			$update ->u_name= $request->username;
+			$update->update();
 			// $anggotaId = Auth::user()->u_anggota_id;
-			User::create([
-				'u_email' => $request->email,
-				'u_anggota_id' => $userId,
-				'u_username' => $request->username,
-				'u_password' => Hash::make($request->password),
-			]);
+
 			DB::Commit();
 			return response()->json([
 				'status' => 'success',
