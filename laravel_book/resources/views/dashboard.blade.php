@@ -169,13 +169,14 @@
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
-                        <!-- <div class="dropdown profile-element"> <span>
+                        <div class="dropdown profile-element"> <span>
                               
                             </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <!-- <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David
-                                            Williams </strong>
-                                    </span> -->
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">
+                             <h2>{{Session::get('user')->u_username}}</h2>
+                                </strong>
+                                    </span> 
                                     <!-- <span class="block m-t-xs"> <strong class="font-bold">
                                              </strong>
                                     </span>
@@ -188,15 +189,20 @@
                                 <li><a href="mailbox.html">Mailbox</a></li>
                                 <li class="divider"></li>
                                 <li><a href="{{route('logout')}}">Logout</a></li>
-                            </ul>
-                        </div> --> 
+                            </ul> -->
+                        </div> 
                         <div class="logo-element">
                             +
                         </div>
                     </li>
-                    <!-- <li>
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span>
-                            <span class="fa arrow"></span></a>
+                    <li>
+                        <a href="berandow"><i class="fa fa-th-large"></i> <span class="nav-label">Beranda</span>
+                        
+                        <!-- <a href="{{url('haiyow')}}"><i class="fa fa-pie-chart"></i> <span class="nav-label">haiyo</span> -->
+                        <a href="haiyow"><i class="fa fa-pie-chart"></i> <span class="nav-label">Buku</span>
+                        </a>
+                    
+                            <!-- <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li><a href="index.html">Dashboard v.1</a></li>
                             <li><a href="dashboard_2.html">Dashboard v.2</a></li>
@@ -204,9 +210,9 @@
                             <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
                             <li><a href="dashboard_5.html">Dashboard v.5 <span
                                         class="label label-primary pull-right">NEW</span></a></li>
-                        </ul>
+                        </ul> -->
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
                     </li>
                     <li>
@@ -232,12 +238,9 @@
                             <li><a href="mail_compose.html">Compose email</a></li>
                             <li><a href="email_template.html">Email templates</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span>
-                        </a>
-                    </li>
-                    <li>
+                    </li> -->
+                    
+                    <!-- <li>
                         <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span></a>
                     </li>
                     <li>
@@ -251,8 +254,8 @@
                             <li><a href="form_editors.html">Text Editor</a></li>
                             <li><a href="form_markdown.html">Markdown</a></li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span> <span
                                 class="pull-right label label-primary">SPECIAL</span></a>
                         <ul class="nav nav-second-level collapse">
@@ -292,8 +295,8 @@
                             <li><a href="500.html">500 Page</a></li>
                             <li class="active"><a href="empty_page.html">Empty page</a></li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span
                                 class="label label-info pull-right">NEW</span></a>
                         <ul class="nav nav-second-level collapse">
@@ -336,9 +339,9 @@
                             <li><a href="notifications.html">Notifications & Tooltips</a></li>
                             <li><a href="badges_labels.html">Badges, Labels, Progress</a></li>
                         </ul>
-                    </li>
+                    </li> -->
 
-                    <li>
+                    <!-- <li>
                         <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">Grid
                                 options</span></a>
                     </li>
@@ -374,8 +377,8 @@
                             <li><a href="carousel.html">Bootstrap Carousel</a></li>
 
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span
                                 class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
@@ -400,8 +403,8 @@
                             <li>
                                 <a href="#">Second Level Item</a></li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations
                             </span><span class="label label-info pull-right">62</span></a>
                     </li>
@@ -412,7 +415,7 @@
                     </li>
                     <li class="special_link">
                         <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">Package</span></a>
-                    </li> -->
+                    </li>  -->
                 </ul>
 
             </div>
@@ -546,23 +549,19 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-sm-4">
-                    <h2>Selamat Datang !</h2>
-                    <ol class="breadcrumb">
+                    <!-- <h2>Selamat Datang !</h2> -->
+                    <!-- <h2> @yield('judul') </h2> -->
+                    <!-- <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Book</a>
                         </li>
                         <li class="active">
                             <strong>Book</strong>
                         </li>
-                    </ol>
+                    </ol> -->
+                    @yield('konten')
                 </div>
-                <div class="col-sm-8">
-                    <div class="title-action">
-
-                        <a href="#myModal" data-toggle="modal" class="btn btn-primary">Edit Profile</a>
-        
-                    </div>
-                </div>
+                
             </div>
        
 

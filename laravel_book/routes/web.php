@@ -30,9 +30,21 @@ Route::get('logout',[LoginController::class, 'logout'])->name('logout');
 
 
 Route::get('dashboard',function(){
-    return view('dashboard');
+    return view('beranda');
 });
 
-Route::resource('dashboard', NamaController::class);
+// Route::get('haiyow',function(){
+//     return view('haiyo');
+// });
+
+Route::get('haiyow', [
+    'uses' => 'App\Http\Controllers\HaiyoController@haiyo'
+])->name('haiyo');
+
+Route::get('berandow', [
+    'uses' => 'App\Http\Controllers\HaiyoController@beranda'
+])->name('beranda');
+
+// Route::resource('dashboard', NamaController::class);
 
 // Route::get('/dashboard','NamaController@dashboard');
