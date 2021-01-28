@@ -548,8 +548,11 @@
                 </nav>
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
-                <div class="col-sm-4">
-                    <!-- <h2>Selamat Datang !</h2> -->
+                
+                
+                
+                <!-- <div class="col-sm-4">
+                     <h2>Selamat Datang !</h2> -->
                     <!-- <h2> @yield('judul') </h2> -->
                     <!-- <ol class="breadcrumb">
                         <li>
@@ -559,9 +562,9 @@
                             <strong>Book</strong>
                         </li>
                     </ol> -->
-                    @yield('konten')
-                </div>
-                
+                  
+                 
+                @yield('konten')
             </div>
        
 
