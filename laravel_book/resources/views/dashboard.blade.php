@@ -214,7 +214,7 @@
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapseOne" class="card-header bg-primary" style="background:aquamarine !important;" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
+                                        <div id="collapseOne" class="card-header bg-primary" style="background: cadetblue !important;" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Link Refrensi
@@ -232,7 +232,7 @@
                                             </div>
                                         </div>
 
-                                        <div id="collapseOne" class="card-header bg-primary" style="background:cadetblue !important;" data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
+                                        <div id="collapseOne" class="card-header bg-primary" style="background: darkcyan!important;" data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Borang
@@ -249,7 +249,7 @@
                                                 <p class="mb-0">Borang</p>
                                             </div>
                                         </div>
-                                        <div id="collapseOne" class="card-header bg-primary" style="background:darkcyan !important;" data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
+                                        <div id="collapseOne" class="card-header bg-primary" style="background: darkseagreen!important;" data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Template
@@ -266,7 +266,7 @@
                                                 <p class="mb-0">Template</p>
                                             </div>
                                         </div>
-                                        <div id="collapseOne" class="card-header bg-primary" style="background:darkseagreen !important;" data-toggle="collapse" data-target="#collapseOneFour" aria-expanded="false" >
+                                        <div id="collapseOne" class="card-header bg-primary" style="background:peachpuff !important;" data-toggle="collapse" data-target="#collapseOneFour" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Play Card
