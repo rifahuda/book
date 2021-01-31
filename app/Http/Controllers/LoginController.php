@@ -40,7 +40,7 @@ class LoginController extends Controller {
 			if ($userPass) {
 
 				$request->session()->regenerate();
-				$request->session()->put('user', User::where('id', $value->id)->first());
+				$request->session()->put('user', User::where('u_email', $value->u_email)->first());
 				return redirect()->intended('dashboard');
 			}
 			else{
@@ -78,7 +78,7 @@ class LoginController extends Controller {
 	 * @return \Illuminate\Http\Response
 	 */
 	public function store(Request $request) {
-		$userId = $request->session()->get('user')->id;
+		$userId = $request->session()->get('user')->u_email;
 
 		DB::Begintransaction();
 

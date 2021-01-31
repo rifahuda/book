@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -336,9 +335,7 @@
         $( document ).ready(function() {
             // $('#myModal').modal('show');
             // cekAkun();
-
         });
-
         function cekAkun(){
             axios.get('{{route('cekakun')}}', {
             })
@@ -354,10 +351,8 @@
                 console.log(error);
             });
         }
-
         function register(){
             axios.post('{{route('register')}}', {
-
                 
                 password: $('#password').val(),
                 username: $('#username').val(),
