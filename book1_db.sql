@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 01 Feb 2021 pada 07.03
+-- Waktu pembuatan: 01 Feb 2021 pada 10.33
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.4.8
 
@@ -32,8 +32,6 @@ CREATE TABLE `d_user` (
   `u_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `u_pwd` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `u_verifydate` timestamp NULL DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
   `u_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -41,13 +39,13 @@ CREATE TABLE `d_user` (
 -- Dumping data untuk tabel `d_user`
 --
 
-INSERT INTO `d_user` (`u_email`, `u_name`, `u_pwd`, `u_verifydate`, `created_at`, `updated_at`, `u_id`) VALUES
-('a@gmail.com', 'bababa', '$2y$10$U0SnBTGTN0lnkB27zPameeaMPhg.07oQpClQjlLJxO4tgoQJvyWOW', NULL, NULL, NULL, 'abc123'),
-('b@gmail.com', 'asd', '$2y$10$lQVkoJIAVKP9I47UAggT1O4nCFfez04zEQz7FOWULGPacLvm9tv46', NULL, NULL, NULL, 'abc123'),
-('c@gmail.com', 'Cici', '$2y$10$4qPKRuoZqsEBAtmt8GOmfeb.W1BzU65NxtRqoME.NFZBzVZEBQSBG', NULL, NULL, NULL, 'abc123'),
-('d@gmail.com', 'koko', '$2y$10$kRN2GNCXR5909SjWhD.ZheiMW44ALDy8mXAJvosdUp/IqRYf1bHRW', NULL, NULL, NULL, 'abc123'),
-('e@gmail.com', 'eoeo', '$2y$10$EwJd8YEYuy2Xooj.7TuDseBbYpPpcktY1Yiv8HLtrH7UeTKkDPKP2', NULL, NULL, NULL, 'abc123'),
-('f@gmail.com', 'fufu', '$2y$10$hxhT8jsPdTFbssn5FxmMYOUVkV3f9MddZZFj/xBm7iEz/YmYXg0HC', NULL, NULL, '2021-01-31 21:46:16', 'abc123');
+INSERT INTO `d_user` (`u_email`, `u_name`, `u_pwd`, `u_verifydate`, `u_id`) VALUES
+('a@gmail.com', 'Andi', '$2y$10$9oKCou/u6H9ySRrNeKfwZOb7eUh3j3aQo6l3DFnmngKg5rMFV7tMS', '2021-02-01 02:26:09', 'abc123'),
+('b@gmail.com', 'Budi', '$2y$10$fADA7IwJWRw//e6O1qTLL./f5k4Wi11cWEhr6mxUIVW8rBkGmlNqa', '2021-01-31 23:55:50', 'abc123'),
+('c@gmail.com', 'Caca', '$2y$10$srSqlE0JkWMoKAvDLd.9JOml2ZpDa220M/8uutCxgJ65WNn0rpF7S', '2021-01-31 23:55:08', 'abc123'),
+('d@gmail.com', 'Didi', '$2y$10$R2rI7MDFD9zbBt2AolbiWO7AycGhbio.0A0BQ8K8DQ5rlnamlDnxi', '2021-01-31 23:56:27', 'abc123'),
+('e@gmail.com', 'Eko', '$2y$10$mF3FVa.Lx4MS3gefznjitOs/wvoPNJJp6iqokmoJrB9Manlm5MmDe', '2021-01-31 23:56:57', 'abc123'),
+('f@gmail.com', 'Fadil', '$2y$10$NB2slgKeWDNHrpLVSaxwyOGPsIpIt0dbVqZHQP7yXLwdnNC1q76ES', '2021-02-01 00:10:22', 'abc123');
 
 -- --------------------------------------------------------
 

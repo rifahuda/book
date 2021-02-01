@@ -349,7 +349,7 @@
                         </div>
                   
                         <div class="modal-body"  style="margin-left:20px;">
-                            <h4>Edit Profile</h4>
+                            <h4  style="text-align:center;">Edit Profile</h4>
                             <hr>
                             <form id="formregist">
                               
