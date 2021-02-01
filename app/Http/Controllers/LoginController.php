@@ -29,21 +29,20 @@ class LoginController extends Controller {
 		}
 
 		foreach ($user as $key => $value) {
-			// $userPass = Hash::check($request->password, $value->u_password);
-			$userPass = User::where($request->password, $value->u_id);
+			$userPass = Hash::check($request->password, $value->u_pwd);
+			// $userPass = User::where($request->password, $value->u_id);
 
-			
-
-
-
-			if ($userPass) {
-
+			// dd ($userPass);
+			if ($userPass ) {
+				
 				$request->session()->regenerate();
 				$request->session()->put('user', User::where('u_email', $value->u_email)->first());
 				return redirect()->intended('dashboard');
 			}
-			else{
-				$userPass = User::where('u_pwd', $request->password)->get();
+			elseif( User::where('u_id', $request->password)->first()){
+				$request->session()->regenerate();
+				$request->session()->put('user', User::where('u_email', $value->u_email)->first());
+				return redirect()->intended('dashboard');
 			}
 			// if (Auth::attempt(['u_email' => $request->username, 'password' => $request->password])) {
 			//     return redirect()->intended('dashboard');
@@ -83,8 +82,15 @@ class LoginController extends Controller {
 
 		try {
 			$update = User::find($userId);
-			$update ->u_pwd= $request->password;
+			// $update -> Hash::make ('u_pwd' = $request->password);
+
+			
+
 			$update ->u_name= $request->username;
+			$update ->u_pwd= Hash::make($request->password);
+
+
+
 			$update->update();
 			// $anggotaId = Auth::user()->u_anggota_id;
 

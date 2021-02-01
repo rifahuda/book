@@ -24,6 +24,7 @@ class User extends Authenticatable
         'u_name',
 
     ];
+    protected $primaryKey = 'u_email';
 
     /**
      * The attributes that should be hidden for arrays.
@@ -34,6 +35,8 @@ class User extends Authenticatable
         'u_password',
 
     ];
+
+    public $timestamps = false;
 
     /**
      * The attributes that should be cast to native types.
