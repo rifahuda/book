@@ -31,7 +31,7 @@ class User extends Authenticatable
     ];
 
     public $incrementing = false;
-    public $timestamps = false;
+    // public $timestamps = false;
 
     /**
      * The attributes that should be cast to native types.
