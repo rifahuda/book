@@ -91,9 +91,11 @@ class LoginController extends Controller {
 
 			
 			$update ->u_name= $request->username;
+	
+
 			$update ->u_pwd= Hash::make($request->password);
 
-
+		
 
 			$update->update();
 			// $anggotaId = Auth::user()->u_anggota_id;

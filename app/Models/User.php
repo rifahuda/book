@@ -33,6 +33,8 @@ class User extends Authenticatable
     public $incrementing = false;
     // public $timestamps = false;
 
+    const UPDATED_AT = 'u_verifydate';
+
     /**
      * The attributes that should be cast to native types.
      *
@@ -45,4 +47,6 @@ class User extends Authenticatable
     public function getAuthPassword() {
         return $this->u_password;
     }
+
+
 }
