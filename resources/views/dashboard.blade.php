@@ -310,7 +310,7 @@
         <div class="modal-dialog">
       
           <!-- Modal content-->
-          <div class="modal-content">
+          <div class="modal-content" style="padding:20px;">
             <a class="close" href="#" data-dismiss="modal">&times;</a>
             <div class="page-body">
           <div class="head justify-content-between" >  
