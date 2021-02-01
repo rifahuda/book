@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 31 Jan 2021 pada 18.45
+-- Waktu pembuatan: 01 Feb 2021 pada 07.03
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.4.8
 
@@ -33,7 +33,7 @@ CREATE TABLE `d_user` (
   `u_pwd` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `u_verifydate` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `update_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
   `u_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -41,8 +41,13 @@ CREATE TABLE `d_user` (
 -- Dumping data untuk tabel `d_user`
 --
 
-INSERT INTO `d_user` (`u_email`, `u_name`, `u_pwd`, `u_verifydate`, `created_at`, `update_at`, `u_id`) VALUES
-('a@gmail.com', '', '', NULL, NULL, NULL, 'abc123');
+INSERT INTO `d_user` (`u_email`, `u_name`, `u_pwd`, `u_verifydate`, `created_at`, `updated_at`, `u_id`) VALUES
+('a@gmail.com', 'bababa', '$2y$10$U0SnBTGTN0lnkB27zPameeaMPhg.07oQpClQjlLJxO4tgoQJvyWOW', NULL, NULL, NULL, 'abc123'),
+('b@gmail.com', 'asd', '$2y$10$lQVkoJIAVKP9I47UAggT1O4nCFfez04zEQz7FOWULGPacLvm9tv46', NULL, NULL, NULL, 'abc123'),
+('c@gmail.com', 'Cici', '$2y$10$4qPKRuoZqsEBAtmt8GOmfeb.W1BzU65NxtRqoME.NFZBzVZEBQSBG', NULL, NULL, NULL, 'abc123'),
+('d@gmail.com', 'koko', '$2y$10$kRN2GNCXR5909SjWhD.ZheiMW44ALDy8mXAJvosdUp/IqRYf1bHRW', NULL, NULL, NULL, 'abc123'),
+('e@gmail.com', 'eoeo', '$2y$10$EwJd8YEYuy2Xooj.7TuDseBbYpPpcktY1Yiv8HLtrH7UeTKkDPKP2', NULL, NULL, NULL, 'abc123'),
+('f@gmail.com', 'fufu', '$2y$10$hxhT8jsPdTFbssn5FxmMYOUVkV3f9MddZZFj/xBm7iEz/YmYXg0HC', NULL, NULL, '2021-01-31 21:46:16', 'abc123');
 
 -- --------------------------------------------------------
 
@@ -154,8 +159,7 @@ CREATE TABLE `password_resets` (
 -- Indeks untuk tabel `d_user`
 --
 ALTER TABLE `d_user`
-  ADD PRIMARY KEY (`u_email`),
-  ADD UNIQUE KEY `d_user_u_email_unique` (`u_email`);
+  ADD PRIMARY KEY (`u_email`);
 
 --
 -- Indeks untuk tabel `failed_jobs`
