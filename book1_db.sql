@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Jan 2021 pada 23.37
+-- Waktu pembuatan: 31 Jan 2021 pada 18.45
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.4.8
 
@@ -28,24 +28,21 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `d_user` (
-  `id` bigint(10) UNSIGNED NOT NULL,
-  `u_email` varchar(50) DEFAULT NULL,
-  `u_name` varchar(50) DEFAULT NULL,
-  `u_pwd` varchar(50) DEFAULT NULL,
+  `u_email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `u_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `u_pwd` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `u_verifydate` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  `u_id` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `update_at` timestamp NULL DEFAULT NULL,
+  `u_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data untuk tabel `d_user`
 --
 
-INSERT INTO `d_user` (`id`, `u_email`, `u_name`, `u_pwd`, `u_verifydate`, `created_at`, `updated_at`, `u_id`) VALUES
-(1, 'a@gmail.com', 'dsfsdfsd', 'dfssdf', NULL, NULL, '2021-01-28 07:15:45', 'abc123'),
-(5, 'test@gmail.com', 'rifa', '1234', NULL, NULL, '2021-01-28 07:25:42', 'abc123'),
-(7, 'umam@gmail.com', 'yoiu', '1234', NULL, NULL, '2021-01-28 09:01:12', 'abc123');
+INSERT INTO `d_user` (`u_email`, `u_name`, `u_pwd`, `u_verifydate`, `created_at`, `update_at`, `u_id`) VALUES
+('a@gmail.com', '', '', NULL, NULL, NULL, 'abc123');
 
 -- --------------------------------------------------------
 
@@ -83,7 +80,11 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '2014_10_12_000000_create_users_table', 1),
 (2, '2014_10_12_100000_create_password_resets_table', 1),
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
-(4, '2021_01_25_145936_create_anggota_table', 1);
+(4, '2021_01_25_145936_create_anggota_table', 1),
+(5, '2021_01_31_082245_create_d_user', 2),
+(6, '2021_01_31_084803_create_d_user_table', 3),
+(7, '2021_01_31_092936_create_d_user_table', 4),
+(8, '2021_01_31_114934_create_d_user_table', 5);
 
 -- --------------------------------------------------------
 
@@ -153,7 +154,8 @@ CREATE TABLE `password_resets` (
 -- Indeks untuk tabel `d_user`
 --
 ALTER TABLE `d_user`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`u_email`),
+  ADD UNIQUE KEY `d_user_u_email_unique` (`u_email`);
 
 --
 -- Indeks untuk tabel `failed_jobs`
@@ -192,12 +194,6 @@ ALTER TABLE `password_resets`
 --
 
 --
--- AUTO_INCREMENT untuk tabel `d_user`
---
-ALTER TABLE `d_user`
-  MODIFY `id` bigint(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
 -- AUTO_INCREMENT untuk tabel `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -207,7 +203,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `m_anggota`

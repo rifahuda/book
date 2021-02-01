@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Dashboard | Codefox - Responsive Bootstrap 4 Admin Dashboard</title>
+        <title>Book</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -148,7 +148,7 @@
                                             </h4>
                                         </div>
                                         <div id="collapseOne" class="collapse">
-                                        <div class="card-header bg-primary" style="background: cadetblue !important;" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
+                                        <div class="card-header bg-primary" style="background: LightSkyBlue !important; border:0.5px solid white" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Link Refrensi
@@ -166,7 +166,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="card-header bg-primary" style="background: darkcyan!important;" data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
+                                        <div class="card-header bg-primary" style="background: LightSkyBlue !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Borang
@@ -183,7 +183,7 @@
                                                 <p class="mb-0">Borang</p>
                                             </div>
                                         </div>
-                                        <div class="card-header bg-primary" style="background: darkseagreen!important;" data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
+                                        <div class="card-header bg-primary" style="background: LightSkyBlue !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Template
@@ -200,7 +200,7 @@
                                                 <p class="mb-0">Template</p>
                                             </div>
                                         </div>
-                                        <div class="card-header bg-primary" style="background:peachpuff !important;" data-toggle="collapse" data-target="#collapseOneFour" aria-expanded="false" >
+                                        <div class="card-header bg-primary" style="background: LightSkyBlue !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneFour" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Play Card
@@ -217,7 +217,7 @@
                                                 <p class="mb-0">Play Card</p>
                                             </div>
                                         </div>
-                                        <div class="card-header bg-primary" style="background:palegoldenrod !important;" data-toggle="collapse" data-target="#collapseOneFive" aria-expanded="false" >
+                                        <div class="card-header bg-primary"style="background: LightSkyBlue !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneFive" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Video
@@ -240,7 +240,7 @@
                                    
                                     
                                     <div class="card mb-2">
-                                        <div class="card-header bg-info" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <div class="card-header bg-primary" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed">
                                                    SERVICE
@@ -353,9 +353,9 @@
         }
         function register(){
             axios.post('{{route('register')}}', {
-                
-                password: $('#password').val(),
                 username: $('#username').val(),
+                password: $('#password').val(),
+          
             })
             .then(function (response) {
                 console.log(response);
@@ -376,7 +376,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
-                                2016 - 2020 &copy; Codefox theme by <a href="">Coderthemes</a>
+                               2021 &copy; Book Web <a href="">Book</a>
                             </div>
                             <div class="col-md-6">
                                 <div class="text-md-right footer-links d-none d-sm-block">

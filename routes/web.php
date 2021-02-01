@@ -37,13 +37,13 @@ Route::get('dashboard',function(){
 //     return view('haiyo');
 // });
 
-Route::get('haiyow', [
-    'uses' => 'App\Http\Controllers\HaiyoController@haiyo'
-])->name('haiyo');
+// Route::get('haiyow', [
+//     'uses' => 'App\Http\Controllers\HaiyoController@haiyo'
+// ])->name('haiyo');
 
-Route::get('berandow', [
-    'uses' => 'App\Http\Controllers\HaiyoController@beranda'
-])->name('beranda');
+// Route::get('berandow', [
+//     'uses' => 'App\Http\Controllers\HaiyoController@beranda'
+// ])->name('beranda');
 
 // Route::resource('dashboard', NamaController::class);
 
