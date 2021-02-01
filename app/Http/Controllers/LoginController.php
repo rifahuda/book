@@ -32,16 +32,22 @@ class LoginController extends Controller {
 			$userPass = Hash::check($request->password, $value->u_pwd);
 			// $userPass = User::where($request->password, $value->u_id);
 
-			// dd ($userPass);
+		
 			if ($userPass ) {
 				
 				$request->session()->regenerate();
-				$request->session()->put('user', User::where('u_email', $value->u_email)->first());
+				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_id', $value->u_id)->first());
 				return redirect()->intended('dashboard');
 			}
-			elseif( User::where('u_id', $request->password)->first()){
+
+			elseif ( User::where('u_id', $request->password)->first()){
+				// dd ( User::where ('u_email', $value->u_email) ->where('u_name', $value->u_name) ->first());
 				$request->session()->regenerate();
-				$request->session()->put('user', User::where('u_email', $value->u_email)->first());
+				$request->session()->forget('user');
+
+				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_id', $value->u_id)->first());
+					
+
 				return redirect()->intended('dashboard');
 			}
 			// if (Auth::attempt(['u_email' => $request->username, 'password' => $request->password])) {
@@ -79,13 +85,11 @@ class LoginController extends Controller {
 		$userId = $request->session()->get('user')->u_email;
 
 		DB::Begintransaction();
-
 		try {
 			$update = User::find($userId);
 			// $update -> Hash::make ('u_pwd' = $request->password);
 
 			
-
 			$update ->u_name= $request->username;
 			$update ->u_pwd= Hash::make($request->password);
 

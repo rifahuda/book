@@ -49,7 +49,7 @@
                                 <!-- End mobile menu toggle-->
                             </li>
                             <li >                           
-                            <a href="#" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light"> {{Session::get('user')->u_name}}</a>
+                            <a href="#" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light"> </a>
                         </li>   
                         <li >                           
                             <a href="#myModal" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light">Edit Profile</a>

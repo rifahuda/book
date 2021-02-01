@@ -17,13 +17,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = [
-        'u_email',
-        'u_pwd',
-        'u_id',
-        'u_name',
-
-    ];
+    // protected $guard = [];
     protected $primaryKey = 'u_email';
 
     /**
@@ -36,6 +30,7 @@ class User extends Authenticatable
 
     ];
 
+    public $incrementing = false;
     public $timestamps = false;
 
     /**
@@ -44,7 +39,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'u_verifydate' => 'datetime',
+        'updated_at' => 'datetime',
     ];
 
     public function getAuthPassword() {
