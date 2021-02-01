@@ -48,12 +48,22 @@
                                 </a>
                                 <!-- End mobile menu toggle-->
                             </li>
-                            <li >                           
-                            <a href="#" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light">  {{Session::get('user')->u_name}}</a>
-                        </li>   
-                        <li >                           
+                      
+                        <!-- <li >                           
                             <a href="#myModal" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light">Edit Profile</a>
-                        </li>     
+                        </li>      -->
+
+
+                      
+                            <!-- <li >                           
+                            <a href="#" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light">  {{Session::get('user')->u_name}}</a>
+                        </li>  
+                        <li >                           
+                            <a href="#" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light">||</a>
+
+
+
+                        </li>  -->
 
                             <li class="dropdown notification-list">
                                 <a href="{{route('logout')}}" class="nav-link right-bar-toggle waves-effect waves-light text-white">
@@ -61,6 +71,9 @@
                                     <span>Logout</span>
                                 </a>
                             </li>
+                            
+                    
+            
                             <!-- <li>
                             <a href="{{route('logout')}}">
                                 <i class="fa fa-sign-out" ></i> Log out
@@ -81,9 +94,24 @@
                         <div id="navigation">
                             <!-- Navigation Menu-->
                             <ul class="navigation-menu">
+                                <!-- <li class="has-submenu"> -->
 
+                            
+
+
+                                <li class="has-submenu">
+
+                                    <a href="#myModal" data-toggle="modal" >
+                                    
+                                    <button type="button" class="btn btn-success waves-effect waves-light">Edit Profile</button>
+                                    </a>
+
+                                </li>
+
+                            
+                        
                                
-
+                      
                            
 
                                
@@ -134,13 +162,15 @@
                         </div>
                         <!-- end row -->
 
-                        <div class="row justify-content-center text-center" >
+                        <div class="row justify-content-center text-center" style="margin-top:30px;">
                             <div class="col-lg-10">
                             
                   
                                 <div class="accordion" id="accordion-test">
                                     <div class="card mb-2">
-                                        <div class="card-header bg-primary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" >
+                                        <!-- <div class="card-header bg-primary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" > -->
+                                        <div class="card-header" style="background:#0d335d !important" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" >
+
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     REFRENSI
@@ -148,7 +178,7 @@
                                             </h4>
                                         </div>
                                         <div id="collapseOne" class="collapse">
-                                        <div class="card-header bg-primary" style="background: DeepSkyBlue !important; border:0.5px solid white" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
+                                        <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Link Refrensi
@@ -166,7 +196,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="card-header bg-primary" style="background: DeepSkyBlue !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
+                                        <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Borang
@@ -183,7 +213,7 @@
                                                 <p class="mb-0">Borang</p>
                                             </div>
                                         </div>
-                                        <div class="card-header bg-primary" style="background: DeepSkyBlue !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
+                                        <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Template
@@ -200,7 +230,7 @@
                                                 <p class="mb-0">Template</p>
                                             </div>
                                         </div>
-                                        <div class="card-header bg-primary" style="background: DeepSkyBlue !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneFour" aria-expanded="false" >
+                                        <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneFour" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Play Card
@@ -217,7 +247,9 @@
                                                 <p class="mb-0">Play Card</p>
                                             </div>
                                         </div>
-                                        <div class="card-header bg-primary"style="background: DeepSkyBlue !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneFive" aria-expanded="false" >
+                                        <!-- <div class="card-header bg-primary"style="background: DeepSkyBlue !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneFive" aria-expanded="false" > -->
+                                        <div class="card-header bg-primary"style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneFive" aria-expanded="false" >
+
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed" >
                                                     Video
@@ -237,10 +269,12 @@
                                    </div>
                                     </div>
                                    
-                                   
                                     
                                     <div class="card mb-2">
-                                        <div class="card-header bg-primary" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <!-- <div class="card-header bg-primary" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> -->
+                                   
+                                        <div class="card-header" style="background:#0d335d!important"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed">
                                                    SERVICE
@@ -265,27 +299,67 @@
 
                 </div> <!-- end content -->
 
-                <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
+<!-- 
+
+                <div class="modal-dialog"  id="myModal" role="dialog" style="padding:50px;">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title mt-0">Modal Content is Responsive</h4>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                      
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="form-group">
+                                                                    <label for="field-3" class="control-label">Username</label>
+                                                                    <input type="text" class="form-control" id="username" placeholder="Username">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="form-group">
+                                                                    <label for="field-3" class="control-label">Password</label>
+                                                                    <input type="text" class="form-control" id="password" placeholder="Password">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-info waves-effect waves-light"  onclick="register()>Save changes</button>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+
+
+                <div id="myModal" class="modal fade" role="dialog" style="padding:50px;">
+                <div class="modal-dialog" >
 
                     <!-- Modal content-->
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="modal-header" style="margin-left:420px;">
+                            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                            <button type="button" class="btn btn-icon waves-effect waves-light btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> </button>
                             <!-- <h4 class="modal-title">Peringatan !</h4> -->
                         </div>
-                        <div class="modal-body">
+                  
+                        <div class="modal-body"  style="margin-left:20px;">
                             <h4>Edit Profile</h4>
                             <hr>
                             <form id="formregist">
                               
-                                <div class="form-group row">
+                                <div class="form-group row" style="margin-left:10px;">
                                     <label for="staticEmail" class="col-sm-2 col-form-label">Username</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control-plaintext" id="username">
                                     </div>
                                 </div>
-                                <div class="form-group row">
+                                <div class="form-group row" style="margin-left:10px;">
                                     <label for="staticEmail" class="col-sm-2 col-form-label">Password</label>
                                     <div class="col-sm-10">
                                         <input type="email" class="form-control-plaintext" id="password">
@@ -297,22 +371,24 @@
                                 {{-- </div> --}}
                             </form>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" onclick="register()">Simpan</button>
+                        <div class="modal-footer"  style="margin-right:30px;">
+                            <button type="button" class="btn btn-info waves-effect waves-light" onclick="register()">Simpan</button>
                         </div>
                     </div>
 
                 </div>
                 </div>
 
-                
                 <div id="success_tic" class="modal fade" role="dialog">
         <div class="modal-dialog">
       
           <!-- Modal content-->
-          <div class="modal-content" style="padding:20px;">
-            <a class="close" href="#" data-dismiss="modal">&times;</a>
+          <div class="modal-content"">
+   
+         
+
             <div class="page-body">
+            <button type="button" style="margin-left:430px; margin-top:15px;" class="btn btn-icon waves-effect waves-light btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> </button>
           <div class="head justify-content-between" >  
             <h3 style="text-align:center;">Berhasil Ditambah</h3>
         
@@ -327,7 +403,11 @@
       </div>
           </div>
       
-        </div>
+    </div>
+
+
+                
+
     {{-- Modal --}}
     <script src="{{asset('assetsadmin/js/jquery-2.1.1.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
