@@ -187,12 +187,79 @@
                                         </div>
                                         <div id="collapseOneOne" class="collapse" data-parent="#accordion-test" style="">
                                             <div class="card-body">
-                                                <p class="mb-0">Refrensi</p>
-                                                <p class="mb-0">Refrensi</p>
-                                                <p class="mb-0">Refrensi</p>
-                                                <p class="mb-0">Refrensi</p>
-                                                <p class="mb-0">Refrensi</p>
-                                                <p class="mb-0">Refrensi</p>
+
+                            <div class="col-lg">
+                                <div class="card">
+                                    <div class="card-body">
+                                      
+                                        <p class="sub-header">
+                                            <!-- Use Class <code>.table-colored-bordered .table-bordered-info</code> -->
+                                        </p>
+
+                                        <div class="table-responsive">
+                                            <table class="table m-0 table-colored-bordered table-bordered-info">
+                                                <thead>
+                                                    <tr>
+                                                        <th>No</th>
+                                                        <th>Nama</th>
+                                                        <th>Sumber</th>
+                                                        <th>Link</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Panda</td>
+                                                        <td>Wikipedia</td>
+                                                        <td><a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Harimau</td>
+                                                        <td>Wikipedia</td>
+                                                        <td><a href="https://en.wikipedia.org/wiki/Harimau">Harimau</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Buaya</td>
+                                                        <td>Wikipedia</td>
+                                                        <td><a href="https://en.wikipedia.org/wiki/Buaya">Buaya</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Jerapah</td>
+                                                        <td>Wikipedia</td>
+                                                        <td><a href="https://en.wikipedia.org/wiki/Giraffe">Jerapah</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>Singa</td>
+                                                        <td>Wikipedia</td>
+                                                        <td><a href="https://en.wikipedia.org/wiki/Singa">Singa</a></td>
+                                                    </tr>
+                                                  
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                                                <!-- <div class="links">    
+                                                    <a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a>
+                                                </div>
+                                                <div class="links">    
+                                                    <a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a>
+                                                </div>
+                                                <div class="links">    
+                                                    <a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a>
+                                                </div> -->
                                             </div>
                                         </div>
 
@@ -205,12 +272,109 @@
                                         </div>
                                         <div id="collapseOneTwo" class="collapse" data-parent="#accordion-test" style="">
                                             <div class="card-body">
+                                            
+                                            <!--
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
+                                            -->
+                                            <div class="col-lg">
+                                <div class="card">
+                                    <div class="card-body">
+                                      
+                                        <p class="sub-header">
+                                            <!-- Use Class <code>.table-colored-bordered .table-bordered-info</code> -->
+                                        </p>
+
+                                        <div class="table-responsive">
+                                            <table class="table m-0 table-colored-bordered table-bordered-info">
+                                                <thead>
+                                                    <tr>
+                                                        <th>No</th>
+                                                        <th>Nama</th>
+                                                        <th>Sumber</th>
+                                                        <th>Link</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Panda</td>
+                                                        <td>Wikipedia</td>
+                                                        <td><a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Harimau</td>
+                                                        <td>Wikipedia</td>
+                                                        <td><a href="https://en.wikipedia.org/wiki/Harimau">Harimau</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Buaya</td>
+                                                        <td>Wikipedia</td>
+                                                        <td><a href="https://en.wikipedia.org/wiki/Buaya">Buaya</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Jerapah</td>
+                                                        <td>Wikipedia</td>
+                                                        <td><a href="https://en.wikipedia.org/wiki/Giraffe">Jerapah</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>Singa</td>
+                                                        <td>Wikipedia</td>
+                                                        <td><a href="https://en.wikipedia.org/wiki/Singa">Singa</a></td>
+                                                    </tr>
+                                                  
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="card">
+                                                            <div class="card-body table-responsive">
+                                                               
+                            
+                                                                <div id="datatable-buttons_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                                                    <div class="dt-buttons btn-group">  
+                                                                 
+                                                                </div>
+                                                                            
+                                                                            
+                   
+                   </div>
+                                                                </div>
+                                                            </div>
+                                                       
+                                                       
+                                                       
+                                                        </div>
+                                                
+                                                
+                                                
+                                                
+                                                </div>
+
+
+
+
+
+
+
                                             </div>
                                         </div>
                                         <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
@@ -257,17 +421,63 @@
                                             </h4>
                                         </div>
                                         <div id="collapseOneFive" class="collapse" data-parent="#accordion-test" style="">
-                                            <div class="card-body">
-                                                <p class="mb-0">Video</p>
-                                                <p class="mb-0">Video</p>
-                                                <p class="mb-0">Video</p>
-                                                <p class="mb-0">Video</p>
-                                                <p class="mb-0">Video</p>
-                                                <p class="mb-0">Video</p>
+                                            <div class="card-body" >
+                                            
+
+
+                                            <div class="col-lg6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h4 class="head justify-content-between">Video Link</h4>
+                                                       
+                                                        <!-- 16:9 aspect ratio -->
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PrUxWZiQfy4?ecver=1"></iframe>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                     
+
+
+
+
+
+                                            <div class="col-lg6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h4 class="head justify-content-between">Local Video</h4>                                                            
+                                                        <video width="1400px" height="700px" controls>
+                                                                <source src="assets/videos/careful.mp4" type="video/mp4">
+                                                                <source src="mov_bbb.ogg" type="video/ogg">
+                                                        </video>
+                                                    
+                                                    </div>
+                                                   
+                                                </div>
+                                                
+                                            </div>
+
+                                            <!--                                             
+                                                tampil gambar lokal
+                                                    <div class="col-sm-4">
+                                                        <img src="assets/images/bg-01.jpg" alt="image" class="img-fluid rounded" width="200">
+                                                        <p class="mb-0">
+                                                            <code>.rounded</code>
+                                                        </p>
+                                                    </div>
+                                                        -->
+
+
+                                            <!-- url('{{asset('assets/images/bg-01.jpg')}}'); -->
+
+
                                             </div>
                                         </div>
-                                   </div>
-                                    </div>
+                            </div>
+                            </div>
                                    
                                     
                                     <div class="card mb-2">
@@ -299,42 +509,7 @@
 
                 </div> <!-- end content -->
 
-<!-- 
 
-                <div class="modal-dialog"  id="myModal" role="dialog" style="padding:50px;">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h4 class="modal-title mt-0">Modal Content is Responsive</h4>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">×</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                      
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="form-group">
-                                                                    <label for="field-3" class="control-label">Username</label>
-                                                                    <input type="text" class="form-control" id="username" placeholder="Username">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="form-group">
-                                                                    <label for="field-3" class="control-label">Password</label>
-                                                                    <input type="text" class="form-control" id="password" placeholder="Password">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                      
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-info waves-effect waves-light"  onclick="register()>Save changes</button>
-                                                    </div>
-                                                </div>
-                                            </div> -->
 
 
                 <div id="myModal" class="modal fade" role="dialog" style="padding:50px;">
