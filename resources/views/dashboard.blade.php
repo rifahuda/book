@@ -21,6 +21,13 @@
         <link href="{{asset('codefox/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('codefox/css/app.min.css')}}" rel="stylesheet" type="text/css"  id="app-stylesheet" />
 
+
+
+
+
+
+
+
     </head>
 
     <body data-layout="horizontal">
@@ -287,6 +294,7 @@
                                       
                                         <p class="sub-header">
                                             <!-- Use Class <code>.table-colored-bordered .table-bordered-info</code> -->
+                                 
                                         </p>
 
                                         <div class="table-responsive">
@@ -341,6 +349,13 @@
                                     </div>
                                 </div>
                             </div>
+
+
+
+
+
+
+                            
 
 
                                                 <div class="row">
@@ -512,6 +527,8 @@
 
 
 
+<!--baru-->
+
                 <div id="myModal" class="modal fade" role="dialog" style="padding:50px;">
                 <div class="modal-dialog" >
 
@@ -536,11 +553,13 @@
                                                             <input type="text" id="username" class="form-control" value="">
                                                         </div>
                                 </div>
+                                  
+                                  
                                 <div class="form-group row">
-                                                        <label class="col-md-2 col-form-label" for="simpleinput">Password</label>
-                                                        <div class="col-md-10">
-                                                            <input type="text" id="password" class="form-control" value=" ">
-                                                        </div>
+                                    <label for="staticEmail" class="col-md-2 col-form-label">Password</label>
+                                    <div class="col-md-10">
+                                        <input type="password" class="form-control" id="password">
+                                    </div>
                                 </div>
                               
                                 {{-- <div class="col-sm-6"> --}}
