@@ -340,30 +340,32 @@
                 <div id="myModal" class="modal fade" role="dialog" style="padding:50px;">
                 <div class="modal-dialog" >
 
+
                     <!-- Modal content-->
                     <div class="modal-content">
-                        <div class="modal-header" style="margin-left:420px;">
-                            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                            <button type="button" class="btn btn-icon waves-effect waves-light btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> </button>
-                            <!-- <h4 class="modal-title">Peringatan !</h4> -->
-                        </div>
+                    <div class="modal-header">
+                                                    <h4 class="modal-title" id="exampleModalScrollableTitle">Edit Profile</h4>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
                   
-                        <div class="modal-body"  style="margin-left:20px;">
-                            <h4  style="text-align:center;">Edit Profile</h4>
-                            <hr>
+                        <div class="modal-body"  style="margin-left:20px; margin-right:20px">
+                        
                             <form id="formregist">
                               
-                                <div class="form-group row" style="margin-left:10px;">
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">Username</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control-plaintext" id="username">
-                                    </div>
+                             
+                                <div class="form-group row" >
+                                                        <label class="col-md-2 col-form-label" for="simpleinput">Username</label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" id="username" class="form-control" value="">
+                                                        </div>
                                 </div>
-                                <div class="form-group row" style="margin-left:10px;">
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">Password</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control-plaintext" id="password">
-                                    </div>
+                                <div class="form-group row">
+                                                        <label class="col-md-2 col-form-label" for="simpleinput">Password</label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" id="password" class="form-control" value=" ">
+                                                        </div>
                                 </div>
                               
                                 {{-- <div class="col-sm-6"> --}}
@@ -371,13 +373,15 @@
                                 {{-- </div> --}}
                             </form>
                         </div>
-                        <div class="modal-footer"  style="margin-right:30px;">
+                        <div class="modal-footer"  style="margin-right:20px;">
                             <button type="button" class="btn btn-info waves-effect waves-light" onclick="register()">Simpan</button>
                         </div>
                     </div>
 
                 </div>
                 </div>
+
+                
 
                 <div id="success_tic" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -388,7 +392,12 @@
          
 
             <div class="page-body">
-            <button type="button" style="margin-left:430px; margin-top:15px;" class="btn btn-icon waves-effect waves-light btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> </button>
+            <div class="modal-header">
+                                                   
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
           <div class="head justify-content-between" >  
             <h3 style="text-align:center;">Berhasil Ditambah</h3>
         
