@@ -20,6 +20,10 @@ class LoginController extends Controller {
 		// dd(Auth::attempt(['u_email' => $request->username, 'password' => $request->password]));
 		// dd(Hash::check('123456','$2y$10$hTe.5kpNrDqutNGGL3hEDOs0J2RcUG7DAz1EL4THyh7lUaD4wj0gO'));
 		// dd(!filter_var($request->username, FILTER_VALIDATE_EMAIL));
+
+
+
+
 		if (!filter_var($request->username, FILTER_VALIDATE_EMAIL)) {
 			// $usename = $request->username;
 			$user = User::where('u_name', $request->username)->get();
@@ -42,9 +46,11 @@ class LoginController extends Controller {
 
 			elseif ( User::where('u_id', $request->password)->first()){
 				// dd ( User::where ('u_email', $value->u_email) ->where('u_name', $value->u_name) ->first());
+
+
+
 				$request->session()->regenerate();
 				$request->session()->forget('user');
-
 				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_id', $value->u_id)->first());
 					
 

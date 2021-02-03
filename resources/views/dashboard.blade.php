@@ -62,15 +62,17 @@
 
 
                       
-                            <!-- <li >                           
+                           <li >                           
                             <a href="#" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light">  {{Session::get('user')->u_name}}</a>
                         </li>  
+
+
                         <li >                           
                             <a href="#" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light">||</a>
 
 
 
-                        </li>  -->
+                        </li>  
 
                             <li class="dropdown notification-list">
                                 <a href="{{route('logout')}}" class="nav-link right-bar-toggle waves-effect waves-light text-white">
@@ -298,7 +300,7 @@
                                         </p>
 
                                         <div class="table-responsive">
-                                            <table class="table m-0 table-colored-bordered table-bordered-info">
+                                            <table class="table m-0 table-colored-bordered table-bordered-info"  id="borang">
                                                 <thead>
                                                     <tr>
                                                         <th>No</th>
@@ -614,7 +616,10 @@
     {{-- Modal --}}
     <script src="{{asset('assetsadmin/js/jquery-2.1.1.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script>
+
+        $('#borang').DataTables();
         $( document ).ready(function() {
             // $('#myModal').modal('show');
             // cekAkun();
@@ -687,6 +692,7 @@
 
         <!-- App js -->
         <script src="{{asset('codefox/js/app.min.js')}}"></script>
+        
         
     </body>
 </html>

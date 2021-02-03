@@ -33,6 +33,10 @@ Route::get('dashboard',function(){
     return view('dashboard');
 });
 
+
+
+
+
 // Route::get('haiyow',function(){
 //     return view('haiyo');
 // });
