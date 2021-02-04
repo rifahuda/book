@@ -22,8 +22,13 @@
         <link href="{{asset('codefox/css/app.min.css')}}" rel="stylesheet" type="text/css"  id="app-stylesheet" />
 
 
-
-
+        <link href="codefox/libs/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css {{asset('')}}" />
+        <link href="codefox/libs/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css {{asset('')}}" />
+        <link href="codefox/libs/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css {{asset('')}}" />
+        <link href="codefox/libs/datatables/fixedHeader.bootstrap4.min.css" rel="stylesheet" type="text/css {{asset('')}}" />
+        <link href="codefox/libs/datatables/scroller.bootstrap4.min.css" rel="stylesheet" type="text/css {{asset('')}}" />
+        <link href="codefox/libs/datatables/dataTables.colVis.css" rel="stylesheet" type="text/css {{asset('')}}" />
+        <link href="codefox/libs/datatables/fixedColumns.bootstrap4.min.css" rel="stylesheet" type="text/css {{asset('')}}" />
 
 
 
@@ -169,21 +174,16 @@
                                         <div class="col-lg">
                                             <div class="card">
                                                 <div class="card-body">
-                                                
-                                                    <p class="sub-header">
-                                                        <!-- Use Class <code>.table-colored-bordered .table-bordered-info</code> -->
-                                                    </p>
-
-                                                    
-                                                            <!-- <p class="mb-0">Refrensi</p>
+                                                  
                                                             <p class="mb-0">Refrensi</p>
                                                             <p class="mb-0">Refrensi</p>
                                                             <p class="mb-0">Refrensi</p>
                                                             <p class="mb-0">Refrensi</p>
-                                                            <p class="mb-0">Refrensi</p> -->
+                                                            <p class="mb-0">Refrensi</p>
+                                                            <p class="mb-0">Refrensi</p>
                                                     
 
-                                                    <div class="table-responsive">
+                                                    <!-- <div class="table-responsive">
                                                             <table class="table m-0 table-colored-bordered table-bordered-info">
                                                             <thead>
                                                                 <tr>
@@ -231,7 +231,7 @@
                                                             </tbody>
                                                         </table>
                                                     </div> 
-                                                
+                                                 -->
                                                 </div>
                                             </div>
                                         </div>
@@ -249,13 +249,27 @@
                                             <div class="card-body">
                                             
                                             
-                                                <!-- <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
-                                                <p class="mb-0">Borang</p> -->
-                                                <div class="table-responsive">
+                                                <p class="mb-0">Borang</p>
+                                                <p class="mb-0">Borang</p>
+
+
+<!-- 
+                                                <div class="col-sm-12 col-md-6">
+                                                <div id="datatable_filter" class="dataTables_filter">
+                                                <label>Search:
+                                                <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="datatable">
+                                                </label>
+                                                </div>
+                                                </div> -->
+
+
+
+
+                                                <!-- <div class="table-responsive">
                                                             <table class="table m-0 table-colored-bordered table-bordered-info">
                                                             <thead>
                                                                 <tr>
@@ -281,11 +295,11 @@
                                                             
                                                             </tbody>
                                                         </table>
-                                                </div>                                                
+                                                </div>                                                 -->
                                       </div>
-                                       <a href="{{url('oke')}}">                                   
+                                       <!-- <a href="{{url('oke')}}">                                   
                                                 <button type="button" style="margin-bottom:30px;" class="btn btn-success waves-effect waves-light">Download</button>
-                                       </a>
+                                       </a> -->
                                         </div>
                                         <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
@@ -344,7 +358,7 @@
                                                         -->
                                             <!-- url('{{asset('assets/images/bg-01.jpg')}}'); -->
 
-                                            <div class="col-lg6">
+                                            <!-- <div class="col-lg6">
                                                 <div class="card">
                                                     <div class="card-body">
                                                         <h4 class="head justify-content-between">Local Video</h4>                                                            
@@ -357,9 +371,14 @@
                                                    
                                                 </div>
                                                 
-                                            </div>
+                                            </div> -->
 
-
+                                            <p class="mb-0">Video</p>
+                                                <p class="mb-0">Video</p>
+                                                <p class="mb-0">Video</p>
+                                                <p class="mb-0">Video</p>
+                                                <p class="mb-0">Video</p>
+                                                <p class="mb-0">Video</p>
 
 
                                             </div>
@@ -551,6 +570,27 @@
 
         <!-- App js -->
         <script src="{{asset('codefox/js/app.min.js')}}"></script>
+
+        <script src="codefox/libs/datatables/jquery.dataTables.min.js {{asset('')}}"></script>
+        <script src="codefox/libs/datatables/dataTables.bootstrap4.min.js {{asset('')}}"></script>
+
+        <script src="codefox/libs/datatables/dataTables.responsive.min.js {{asset('')}}"></script>
+        <script src="codefox/libs/datatables/responsive.bootstrap4.min.js {{asset('')}}"></script>
+
+        <script src="codefox/libs/datatables/dataTables.buttons.min.js {{asset('')}}"></script>
+        <script src="codefox/libs/datatables/buttons.bootstrap4.min.js {{asset('')}}"></script>
+
+        <script src="codefox/libs/datatables/buttons.html5.min.js {{asset('')}}"></script>
+        <script src="codefox/libs/datatables/buttons.print.min.js {{asset('')}}"></script>
+
+        <script src="codefox/libs/datatables/dataTables.keyTable.min.js {{asset('')}}"></script>
+        <script src="codefox/libs/datatables/dataTables.fixedHeader.min.js {{asset('')}}"></script>
+        <script src="codefox/libs/datatables/dataTables.scroller.min.js {{asset('')}}"></script>
+        <script src="codefox/libs/datatables/dataTables.colVis.js {{asset('')}}"></script>
+        <script src="codefox/libs/datatables/dataTables.fixedColumns.min.js {{asset('')}}"></script>
+
+       
+        <script src="codefox/js/pages/datatables.init.js {{asset('')}}"></script>
         
         
     </body>

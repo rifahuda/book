@@ -34,16 +34,18 @@ class LoginController extends Controller {
 		if (!filter_var($request->username, FILTER_VALIDATE_EMAIL)) {
 			// $usename = $request->username;
 			$user = User::where('u_name', $request->username)->get();
+			// dd('y');
 		} else {
 			// $usename = $request->username;
 			$user = User::where('u_email', $request->username)->get();
+			// dd('z', $user, $request->username);
 		}
-
+		// dd('x', $user);
 		foreach ($user as $key => $value) {
 			$userPass = Hash::check($request->password, $value->u_pwd);
 			// $userPass = User::where($request->password, $value->u_id);
 
-		
+			
 			if ($userPass ) {
 				
 				$request->session()->regenerate();
