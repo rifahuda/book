@@ -144,7 +144,7 @@
                             <div class="col-lg-10">
                             
                   
-                                <div class="accordion" id="accordion-test">
+                                <div class="accordion" id="accordion-test" >
                                     <div class="card mb-2">
                                         <!-- <div class="card-header bg-primary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" > -->
                                         <div class="card-header" style="background:#0d335d !important" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" >
@@ -249,14 +249,46 @@
                                             <div class="card-body">
                                             
                                             
+                                                <!-- <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
-                                                <p class="mb-0">Borang</p>
-                                                <p class="mb-0">Borang</p>
+                                                <p class="mb-0">Borang</p> -->
+                                                <div class="table-responsive">
+                                                            <table class="table m-0 table-colored-bordered table-bordered-info">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Nama</th>
+                                                                    <th>Email</th>
+                                                                    <th>Unik</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            
+                                                            @php $i=1 @endphp
+                                                            @foreach($user as $s)
+                                                                <tr>
+                                                                    <th scope="row">{{$i++}}</th>
+                                                                    <td>{{$s->u_name}}</td>
+                                                                    <td>{{$s->u_email}}</td>
+                                                                    <td>{{$s->u_id}}</td>
+                                                                    
+                                                                </tr>
+                                                            @endforeach
+                                        
+                                                            
+                                                            </tbody>
+                                                        </table>
+                                                </div> 
+                                               
+
 
                                        </div>
+                                       <a href="{{url('oke')}}">                                   
+                                                <button type="button" style="margin-bottom:30px;" class="btn btn-success waves-effect waves-light">Download</button>
+                                       </a>
                                         </div>
                                         <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
@@ -304,10 +336,6 @@
                                         <div id="collapseOneFive" class="collapse" data-parent="#accordion-test" style="">
                                             <div class="card-body" >
                                             
-
-
-                                  
-
                                             <!--                                             
                                                 tampil gambar lokal
                                                     <div class="col-sm-4">
@@ -317,9 +345,24 @@
                                                         </p>
                                                     </div>
                                                         -->
-
-
                                             <!-- url('{{asset('assets/images/bg-01.jpg')}}'); -->
+
+                                            <div class="col-lg6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h4 class="head justify-content-between">Local Video</h4>                                                            
+                                                        <video width="1400px" height="700px" controls>
+                                                                <source src="assets/videos/careful.mp4" type="video/mp4">
+                                                                <source src="mov_bbb.ogg" type="video/ogg">
+                                                        </video>
+                                                    
+                                                    </div>
+                                                   
+                                                </div>
+                                                
+                                            </div>
+
+
 
 
                                             </div>
@@ -360,12 +403,10 @@
 
 
 
-<!--baru-->
+                    <!--baru-->
 
                 <div id="myModal" class="modal fade" role="dialog" style="padding:50px;">
                 <div class="modal-dialog" >
-
-
                     <!-- Modal content-->
                     <div class="modal-content">
                     <div class="modal-header">
