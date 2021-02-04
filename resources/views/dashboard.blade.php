@@ -281,11 +281,8 @@
                                                             
                                                             </tbody>
                                                         </table>
-                                                </div> 
-                                               
-
-
-                                       </div>
+                                                </div>                                                
+                                      </div>
                                        <a href="{{url('oke')}}">                                   
                                                 <button type="button" style="margin-bottom:30px;" class="btn btn-success waves-effect waves-light">Download</button>
                                        </a>
@@ -406,72 +403,63 @@
                     <!--baru-->
 
                 <div id="myModal" class="modal fade" role="dialog" style="padding:50px;">
-                <div class="modal-dialog" >
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                    <div class="modal-header">
-                                                    <h4 class="modal-title" id="exampleModalScrollableTitle">Edit Profile</h4>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">×</span>
-                                                    </button>
-                                                </div>
-                  
-                        <div class="modal-body"  style="margin-left:20px; margin-right:20px">
-                        
-                            <form id="formregist">
-                              
-                             
-                                <div class="form-group row" >
-                                                        <label class="col-md-2 col-form-label" for="simpleinput">Username</label>
-                                                        <div class="col-md-10">
-                                                            <input type="text" id="username" class="form-control" value="">
-                                                        </div>
-                                </div>
-                                  
-                                  
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-md-2 col-form-label">Password</label>
-                                    <div class="col-md-10">
-                                        <input type="password" class="form-control" id="password">
+                    <div class="modal-dialog" >
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                 <h4 class="modal-title" id="exampleModalScrollableTitle">Edit Profile</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                            </div>
+                    
+                            <div class="modal-body"  style="margin-left:20px; margin-right:20px">
+                                <form id="formregist">    
+                                    <div class="form-group row" >
+                                        <label class="col-md-2 col-form-label" for="simpleinput">Username</label>
+                                        <div class="col-md-10">
+                                        <input type="text" id="username" class="form-control" value="">
+                                        </div>
                                     </div>
-                                </div>
-                              
-                                {{-- <div class="col-sm-6"> --}}
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-md-2 col-form-label">Password</label>
+                                        <div class="col-md-10">
+                                            <input type="password" class="form-control" id="password">
+                                        </div>
+                                    </div>                              
+                                    {{-- <div class="col-sm-6"> --}}
+                                    {{-- </div> --}}
+                                </form>
+                            </div>
+                            <div class="modal-footer"  style="margin-right:20px;">
+                                <button type="button" class="btn btn-info waves-effect waves-light" onclick="register()">Simpan</button>
+                            </div>
+                        </div>
 
-                                {{-- </div> --}}
-                            </form>
-                        </div>
-                        <div class="modal-footer"  style="margin-right:20px;">
-                            <button type="button" class="btn btn-info waves-effect waves-light" onclick="register()">Simpan</button>
-                        </div>
                     </div>
-
-                </div>
                 </div>
 
                 
 
                 <div id="success_tic" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-      
-          <!-- Modal content-->
-          <div class="modal-content"">
-   
-         
-
-            <div class="page-body">
-            <div class="modal-header">
-                                                   
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">×</span>
-                                                    </button>
-                                                </div>
-          <div class="head justify-content-between" >  
-            <img class="icon-colored " style="margin-left:230px;" alt="" src="assets/images/icons/ok.svg"  title="ok.svg">
-            <h3 style="text-align:center;">Berhasil Ditambah</h3>
-
-          </div>
-      
+                    <div class="modal-dialog">
+                    <!-- Modal content-->
+                        <div class="modal-content">
+                             <div class="page-body">
+                                <div class="modal-header">                                                  
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                            <div class="head justify-content-between" >  
+                                <img class="icon-colored " style="margin-left:230px;" alt="" src="assets/images/icons/ok.svg"  title="ok.svg">
+                                <h3 style="text-align:center;">Berhasil Ditambah</h3>
+                            </div>      
+        
+        
+        
+        
+        
         <h1 style="text-align:center;"><div class="checkmark-circle">
         <div class="background"></div>
         <div class="checkmark draw"></div>
@@ -488,10 +476,8 @@
 
     {{-- Modal --}}
     <script src="{{asset('assetsadmin/js/jquery-2.1.1.js')}}"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
-
         // $('#borang').DataTables();
         $( document ).ready(function() {
             // $('#myModal').modal('show');
