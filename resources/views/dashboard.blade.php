@@ -62,17 +62,7 @@
 
 
                       
-                            <li >                           
-                            <a href="#" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light">  {{Session::get('user')->u_name}}</a>
-                        </li>   
-
-
-                        <li >                           
-                            <a href="#" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light">||</a>
-
-
-
-                        </li>  
+                          
 
                             <li class="dropdown notification-list">
                                 <a href="{{route('logout')}}" class="nav-link right-bar-toggle waves-effect waves-light text-white">
@@ -205,7 +195,16 @@
                                             <!-- Use Class <code>.table-colored-bordered .table-bordered-info</code> -->
                                         </p>
 
-                                        <div class="table-responsive">
+                                          
+                                                <!-- <p class="mb-0">Refrensi</p>
+                                                <p class="mb-0">Refrensi</p>
+                                                <p class="mb-0">Refrensi</p>
+                                                <p class="mb-0">Refrensi</p>
+                                                <p class="mb-0">Refrensi</p>
+                                                <p class="mb-0">Refrensi</p> -->
+                                           
+
+                                        <!-- <div class="table-responsive">
                                             <table class="table m-0 table-colored-bordered table-bordered-info">
                                                 <thead>
                                                     <tr>
@@ -252,7 +251,7 @@
                                                   
                                                 </tbody>
                                             </table>
-                                        </div>
+                                        </div> -->
                                     
                                     </div>
                                 </div>
@@ -282,14 +281,14 @@
                                         <div id="collapseOneTwo" class="collapse" data-parent="#accordion-test" style="">
                                             <div class="card-body">
                                             
-                                            <!--
+                                            
+                                                <!-- <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
-                                                <p class="mb-0">Borang</p>
-                                                <p class="mb-0">Borang</p>
-                                            -->
+                                                <p class="mb-0">Borang</p> -->
+                                           
                                             <div class="col-lg">
                                 <div class="card">
                                     <div class="card-body">
@@ -299,45 +298,11 @@
                                      
                                         </p>
 
-                                        <div class="table-responsive">
-                                            <!-- <table class="table m-0 table-colored-bordered table-bordered-info"  id="borang"> -->
-                                            <table class="table m-0 table-colored-bordered table-bordered-info"  >
-
-                                                <thead>
-                                                    <tr>
-                                                        <th>No</th>
-                                                        <th>Email</th>
-                                                        <th>Username</th>
-                                                        <th>Unik Id</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-
-                                                    @php $i=1 @endphp
-                                                    @foreach($user as $s)
-                                                    <tr>
-                                                        <th scope="row">{{$i++}}</th>
-                                                        <td>{{$s->u_email}}</td>
-                                                        <td>{{$s->u_name}}</td>
-                                                        <td>{{$s->u_id}}</td>
-
-                                                 
-                                                    </tr>
-                                                    @endforeach
-                                                 
-                                                  
-                                                </tbody>
-                                            </table>
                                        
-                                        </div>
-                                       
-                                    </div>
-                                    <a href="{{url('oke')}}"   >
-                                    
-                                    <button type="button" class="btn btn-success waves-effect waves-light">Download</button>
-                                    </a>
-                                </div>
                             </div>
+                            </div>
+                            </div>
+
 
 
 
@@ -429,40 +394,7 @@
                                             
 
 
-                                            <div class="col-lg6">
-                                                <div class="card">
-                                                    <div class="card-body">
-                                                        <h4 class="head justify-content-between">Video Link</h4>
-                                                       
-                                                        <!-- 16:9 aspect ratio -->
-                                                        <div class="embed-responsive embed-responsive-16by9">
-                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PrUxWZiQfy4?ecver=1"></iframe>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            
-                                     
-
-
-
-
-
-                                            <div class="col-lg6">
-                                                <div class="card">
-                                                    <div class="card-body">
-                                                        <h4 class="head justify-content-between">Local Video</h4>                                                            
-                                                        <video width="1400px" height="700px" controls>
-                                                                <source src="assets/videos/careful.mp4" type="video/mp4">
-                                                                <source src="mov_bbb.ogg" type="video/ogg">
-                                                        </video>
-                                                    
-                                                    </div>
-                                                   
-                                                </div>
-                                                
-                                            </div>
+                                  
 
                                             <!--                                             
                                                 tampil gambar lokal
