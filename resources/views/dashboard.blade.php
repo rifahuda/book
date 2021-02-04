@@ -94,10 +94,6 @@
                             <!-- Navigation Menu-->
                             <ul class="navigation-menu">
                                 <!-- <li class="has-submenu"> -->
-
-                            
-
-
                                 <li class="has-submenu">
 
                                     <a href="#myModal" data-toggle="modal" >
@@ -106,19 +102,6 @@
                                     </a>
 
                                 </li>
-
-                            
-                        
-                               
-                      
-                           
-
-                               
-
-                               
-
-                               
-
                             </ul>
                             <!-- End navigation menu -->
 
@@ -155,12 +138,8 @@
                             </div>
                         </div>     
                         <!-- end page title --> 
-
-                        
-                      
                         </div>
                         <!-- end row -->
-
                         <div class="row justify-content-center text-center" style="margin-top:30px;">
                             <div class="col-lg-10">
                             
@@ -187,87 +166,75 @@
                                         <div id="collapseOneOne" class="collapse" data-parent="#accordion-test" style="">
                                             <div class="card-body">
 
-                            <div class="col-lg">
-                                <div class="card">
-                                    <div class="card-body">
-                                      
-                                        <p class="sub-header">
-                                            <!-- Use Class <code>.table-colored-bordered .table-bordered-info</code> -->
-                                        </p>
+                                        <div class="col-lg">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                
+                                                    <p class="sub-header">
+                                                        <!-- Use Class <code>.table-colored-bordered .table-bordered-info</code> -->
+                                                    </p>
 
-                                          
-                                                <!-- <p class="mb-0">Refrensi</p>
-                                                <p class="mb-0">Refrensi</p>
-                                                <p class="mb-0">Refrensi</p>
-                                                <p class="mb-0">Refrensi</p>
-                                                <p class="mb-0">Refrensi</p>
-                                                <p class="mb-0">Refrensi</p> -->
-                                           
+                                                    
+                                                            <!-- <p class="mb-0">Refrensi</p>
+                                                            <p class="mb-0">Refrensi</p>
+                                                            <p class="mb-0">Refrensi</p>
+                                                            <p class="mb-0">Refrensi</p>
+                                                            <p class="mb-0">Refrensi</p>
+                                                            <p class="mb-0">Refrensi</p> -->
+                                                    
 
-                                        <!-- <div class="table-responsive">
-                                            <table class="table m-0 table-colored-bordered table-bordered-info">
-                                                <thead>
-                                                    <tr>
-                                                        <th>No</th>
-                                                        <th>Nama</th>
-                                                        <th>Sumber</th>
-                                                        <th>Link</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Panda</td>
-                                                        <td>Wikipedia</td>
-                                                        <td><a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a></td>
-                                                    </tr>
+                                                    <div class="table-responsive">
+                                                            <table class="table m-0 table-colored-bordered table-bordered-info">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Nama</th>
+                                                                    <th>Sumber</th>
+                                                                    <th>Link</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1</th>
+                                                                    <td>Panda</td>
+                                                                    <td>Wikipedia</td>
+                                                                    <td><a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a></td>
+                                                                </tr>
 
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>Harimau</td>
-                                                        <td>Wikipedia</td>
-                                                        <td><a href="https://en.wikipedia.org/wiki/Harimau">Harimau</a></td>
-                                                    </tr>
+                                                                <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>Harimau</td>
+                                                                    <td>Wikipedia</td>
+                                                                    <td><a href="https://en.wikipedia.org/wiki/Harimau">Harimau</a></td>
+                                                                </tr>
 
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>Buaya</td>
-                                                        <td>Wikipedia</td>
-                                                        <td><a href="https://en.wikipedia.org/wiki/Buaya">Buaya</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td>Jerapah</td>
-                                                        <td>Wikipedia</td>
-                                                        <td><a href="https://en.wikipedia.org/wiki/Giraffe">Jerapah</a></td>
-                                                    </tr>
+                                                                <tr>
+                                                                    <th scope="row">3</th>
+                                                                    <td>Buaya</td>
+                                                                    <td>Wikipedia</td>
+                                                                    <td><a href="https://en.wikipedia.org/wiki/Buaya">Buaya</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">4</th>
+                                                                    <td>Jerapah</td>
+                                                                    <td>Wikipedia</td>
+                                                                    <td><a href="https://en.wikipedia.org/wiki/Giraffe">Jerapah</a></td>
+                                                                </tr>
 
-                                                    <tr>
-                                                        <th scope="row">5</th>
-                                                        <td>Singa</td>
-                                                        <td>Wikipedia</td>
-                                                        <td><a href="https://en.wikipedia.org/wiki/Singa">Singa</a></td>
-                                                    </tr>
-                                                  
-                                                </tbody>
-                                            </table>
-                                        </div> -->
-                                    
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                                                <!-- <div class="links">    
-                                                    <a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a>
+                                                                <tr>
+                                                                    <th scope="row">5</th>
+                                                                    <td>Singa</td>
+                                                                    <td>Wikipedia</td>
+                                                                    <td><a href="https://en.wikipedia.org/wiki/Singa">Singa</a></td>
+                                                                </tr>
+                                                            
+                                                            </tbody>
+                                                        </table>
+                                                    </div> 
+                                                
                                                 </div>
-                                                <div class="links">    
-                                                    <a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a>
-                                                </div>
-                                                <div class="links">    
-                                                    <a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a>
-                                                </div> -->
+                                            </div>
+                                        </div>
                                             </div>
                                         </div>
 
@@ -282,69 +249,14 @@
                                             <div class="card-body">
                                             
                                             
-                                                <!-- <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
-                                                <p class="mb-0">Borang</p> -->
-                                           
-                                            <div class="col-lg">
-                                <div class="card">
-                                    <div class="card-body">
-                                      
-                                        <p class="sub-header">
-                                            <!-- Use Class <code>.table-colored-bordered .table-bordered-info</code> -->
-                                     
-                                        </p>
+                                                <p class="mb-0">Borang</p>
+                                                <p class="mb-0">Borang</p>
 
-                                       
-                            </div>
-                            </div>
-                            </div>
-
-
-
-
-
-
-
-                            
-
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="card">
-                                                            <div class="card-body table-responsive">
-                                                               
-                            
-                                                                <div id="datatable-buttons_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                                                    <div class="dt-buttons btn-group">  
-                                                                 
-                                                                </div>
-                                                                            
-                                                                            
-                   
-                   </div>
-                                                                </div>
-                                                            </div>
-                                                       
-                                                       
-                                                       
-                                                        </div>
-                                                
-                                                
-                                                
-                                                
-                                                </div>
-
-
-
-
-
-
-
-                                            </div>
+                                       </div>
                                         </div>
                                         <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
@@ -514,8 +426,9 @@
                                                     </button>
                                                 </div>
           <div class="head justify-content-between" >  
+            <img class="icon-colored " style="margin-left:230px;" alt="" src="assets/images/icons/ok.svg"  title="ok.svg">
             <h3 style="text-align:center;">Berhasil Ditambah</h3>
-        
+
           </div>
       
         <h1 style="text-align:center;"><div class="checkmark-circle">

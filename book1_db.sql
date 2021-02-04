@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 01 Feb 2021 pada 10.33
+-- Waktu pembuatan: 04 Feb 2021 pada 02.25
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.4.8
 
@@ -40,12 +40,19 @@ CREATE TABLE `d_user` (
 --
 
 INSERT INTO `d_user` (`u_email`, `u_name`, `u_pwd`, `u_verifydate`, `u_id`) VALUES
-('a@gmail.com', 'Andi', '$2y$10$9oKCou/u6H9ySRrNeKfwZOb7eUh3j3aQo6l3DFnmngKg5rMFV7tMS', '2021-02-01 02:26:09', 'abc123'),
+('a@gmail.com', 'Andi', '$2y$10$QED3pDK1XgxscWC4oDSr7evuAY6uorQWou0eD6DafJpY4x9rduEnO', '2021-02-03 07:17:21', 'abc123'),
 ('b@gmail.com', 'Budi', '$2y$10$fADA7IwJWRw//e6O1qTLL./f5k4Wi11cWEhr6mxUIVW8rBkGmlNqa', '2021-01-31 23:55:50', 'abc123'),
 ('c@gmail.com', 'Caca', '$2y$10$srSqlE0JkWMoKAvDLd.9JOml2ZpDa220M/8uutCxgJ65WNn0rpF7S', '2021-01-31 23:55:08', 'abc123'),
 ('d@gmail.com', 'Didi', '$2y$10$R2rI7MDFD9zbBt2AolbiWO7AycGhbio.0A0BQ8K8DQ5rlnamlDnxi', '2021-01-31 23:56:27', 'abc123'),
 ('e@gmail.com', 'Eko', '$2y$10$mF3FVa.Lx4MS3gefznjitOs/wvoPNJJp6iqokmoJrB9Manlm5MmDe', '2021-01-31 23:56:57', 'abc123'),
-('f@gmail.com', 'Fadil', '$2y$10$NB2slgKeWDNHrpLVSaxwyOGPsIpIt0dbVqZHQP7yXLwdnNC1q76ES', '2021-02-01 00:10:22', 'abc123');
+('f@gmail.com', 'Fadil', '$2y$10$NB2slgKeWDNHrpLVSaxwyOGPsIpIt0dbVqZHQP7yXLwdnNC1q76ES', '2021-02-01 00:10:22', 'abc123'),
+('g@gmail.com', 'Gaga', '$2y$10$wrB9d3.LLMwB0weB3RkjBOUF2oyZ32vnHz.3HVRcG3jha27zE0gvq', '2021-02-01 02:37:57', 'abc123'),
+('h@gmail.com', 'Handi Mani', '$2y$10$AUrhvXXd1K0W1dktuQnvDeeTzTC1U6P6PE2rXeBFLkOU9mhw.GJ1m', '2021-02-03 03:41:08', 'abc123'),
+('i@gmail.com', 'iis', '$2y$10$fcuD./P7kPd7JyfDMuWaEe.0dnP3s1NtlmhC/r6dZB/x/7oyHGpFe', '2021-02-02 00:34:04', 'abc123'),
+('j@gmail.com', 'jojo', '$2y$10$BFwf7ikClAAtsstZOoJ4peKAvkT0cYvgWBCxkidEWfRrxkreVGIHe', '2021-02-02 00:45:26', 'abc123'),
+('k@gmail.com', 'kiki', '$2y$10$x12GguSUwlxamrDzd6M83O1lQcAQEbRrOkpFk2CRqFuXA.1jP0j/.', '2021-02-02 01:58:27', 'abc123'),
+('l@gmail.com', 'lala', '$2y$10$Ivk0vbR0kVvDCNJhFaMYOu66J6/h6Y8sQsnocXwMdOHk07YM35WNO', '2021-02-03 01:54:01', 'abc123'),
+('m@gmail.com', '', '', NULL, 'abc123');
 
 -- --------------------------------------------------------
 
