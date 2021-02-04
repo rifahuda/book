@@ -30,7 +30,7 @@
 
     </head>
 
-    <body data-layout="horizontal">
+    <body data-layout="horizontal"  >
 
         <!-- Begin page -->
         <div id="wrapper">
@@ -62,9 +62,9 @@
 
 
                       
-                           <li >                           
+                            <li >                           
                             <a href="#" data-toggle="modal" class="nav-link right-bar-toggle waves-effect text-white waves-light">  {{Session::get('user')->u_name}}</a>
-                        </li>  
+                        </li>   
 
 
                         <li >                           
@@ -296,59 +296,46 @@
                                       
                                         <p class="sub-header">
                                             <!-- Use Class <code>.table-colored-bordered .table-bordered-info</code> -->
-                                 
+                                     
                                         </p>
 
                                         <div class="table-responsive">
-                                            <table class="table m-0 table-colored-bordered table-bordered-info"  id="borang">
+                                            <!-- <table class="table m-0 table-colored-bordered table-bordered-info"  id="borang"> -->
+                                            <table class="table m-0 table-colored-bordered table-bordered-info"  >
+
                                                 <thead>
                                                     <tr>
                                                         <th>No</th>
-                                                        <th>Nama</th>
-                                                        <th>Sumber</th>
-                                                        <th>Link</th>
+                                                        <th>Email</th>
+                                                        <th>Username</th>
+                                                        <th>Unik Id</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Panda</td>
-                                                        <td>Wikipedia</td>
-                                                        <td><a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a></td>
-                                                    </tr>
 
+                                                    @php $i=1 @endphp
+                                                    @foreach($user as $s)
                                                     <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>Harimau</td>
-                                                        <td>Wikipedia</td>
-                                                        <td><a href="https://en.wikipedia.org/wiki/Harimau">Harimau</a></td>
-                                                    </tr>
+                                                        <th scope="row">{{$i++}}</th>
+                                                        <td>{{$s->u_email}}</td>
+                                                        <td>{{$s->u_name}}</td>
+                                                        <td>{{$s->u_id}}</td>
 
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>Buaya</td>
-                                                        <td>Wikipedia</td>
-                                                        <td><a href="https://en.wikipedia.org/wiki/Buaya">Buaya</a></td>
+                                                 
                                                     </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td>Jerapah</td>
-                                                        <td>Wikipedia</td>
-                                                        <td><a href="https://en.wikipedia.org/wiki/Giraffe">Jerapah</a></td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th scope="row">5</th>
-                                                        <td>Singa</td>
-                                                        <td>Wikipedia</td>
-                                                        <td><a href="https://en.wikipedia.org/wiki/Singa">Singa</a></td>
-                                                    </tr>
+                                                    @endforeach
+                                                 
                                                   
                                                 </tbody>
                                             </table>
+                                       
                                         </div>
-                                    
+                                       
                                     </div>
+                                    <a href="{{url('oke')}}"   >
+                                    
+                                    <button type="button" class="btn btn-success waves-effect waves-light">Download</button>
+                                    </a>
                                 </div>
                             </div>
 
@@ -619,7 +606,7 @@
 
     <script>
 
-        $('#borang').DataTables();
+        // $('#borang').DataTables();
         $( document ).ready(function() {
             // $('#myModal').modal('show');
             // cekAkun();

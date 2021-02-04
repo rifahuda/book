@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
+
+use App\Http\Controllers\Controller;
+
+
+use App\Exports\UserExport;
+use Maatwebsite\Excel\Facades\Excel;
+
 class LoginController extends Controller {
 	/**
 	 * Handle an authentication attempt.
@@ -117,10 +124,32 @@ class LoginController extends Controller {
 		}
 	}
 
+
+	public function tampil()
+	{
+		$user = User::all();
+		return view('dashboard',['user'=>$user]);
+	}
+ 
+	public function export_excel()
+	{
+		return Excel::download(new UserExport, 'User.xlsx');
+		
+	}
+
+
+
+
+
+
+
 	public function logout(Request $request) {
 		$request->session()->forget('user');
 		return redirect('/');
 	}
+
+
+
 
 	
 }

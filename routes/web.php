@@ -29,21 +29,31 @@ Route::get('logout',[LoginController::class, 'logout'])->name('logout');
 
 
 
-Route::get('dashboard',function(){
-    return view('dashboard');
-});
+
+Route::get('dashboard',[LoginController::class, 'tampil']);
+Route::get('oke',[LoginController::class, 'export_excel']);
+
+
+// Route::get('dashboard',function(){
+//     return view('dashboard');
+// });
+
+
+// Route::get('dashboard',function(){
+//     return view('dashboard');
+// });
 
 
 
+// Route::get('/siswa', 'SiswaController@index');
+// Route::get('/siswa/export_excel', 'SiswaController@export_excel');
 
 
 // Route::get('haiyow',function(){
 //     return view('haiyo');
 // });
 
-// Route::get('haiyow', [
-//     'uses' => 'App\Http\Controllers\HaiyoController@haiyo'
-// ])->name('haiyo');
+
 
 // Route::get('berandow', [
 //     'uses' => 'App\Http\Controllers\HaiyoController@beranda'
