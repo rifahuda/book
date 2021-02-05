@@ -257,20 +257,20 @@
                                                 <p class="mb-0">Borang</p>
 
 
-<!-- 
-                                                <div class="col-sm-12 col-md-6">
-                                                <div id="datatable_filter" class="dataTables_filter">
+
+                                                <!-- <div class="col-sm-12 col-md-6">
+                                                <div id="borang" class="dataTables_filter">
                                                 <label>Search:
                                                 <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="datatable">
                                                 </label>
                                                 </div>
-                                                </div> -->
+                                                </div>  -->
 
 
 
 
-                                                <!-- <div class="table-responsive">
-                                                            <table class="table m-0 table-colored-bordered table-bordered-info">
+                                                 <!-- <div class="table-responsive">
+                                                            <table class="table m-0 table-colored-bordered table-bordered-info" id="borang">
                                                             <thead>
                                                                 <tr>
                                                                     <th>No</th>
@@ -287,7 +287,7 @@
                                                                     <th scope="row">{{$i++}}</th>
                                                                     <td>{{$s->u_name}}</td>
                                                                     <td>{{$s->u_email}}</td>
-                                                                    <td>{{$s->u_id}}</td>
+                                                                    <td>{{$s->u_uniqid}}</td>
                                                                     
                                                                 </tr>
                                                             @endforeach
@@ -295,7 +295,7 @@
                                                             
                                                             </tbody>
                                                         </table>
-                                                </div>                                                 -->
+                                                </div>                                                  -->
                                       </div>
                                        <!-- <a href="{{url('oke')}}">                                   
                                                 <button type="button" style="margin-bottom:30px;" class="btn btn-success waves-effect waves-light">Download</button>
@@ -437,13 +437,13 @@
                                     <div class="form-group row" >
                                         <label class="col-md-2 col-form-label" for="simpleinput">Username</label>
                                         <div class="col-md-10">
-                                        <input type="text" id="username" class="form-control" value="">
+                                        <input type="text" id="username" class="form-control" value="{{Session::get('user')->u_name}}">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="staticEmail" class="col-md-2 col-form-label">Password</label>
                                         <div class="col-md-10">
-                                            <input type="password" class="form-control" id="password">
+                                            <input type="password" class="form-control" id="password" >
                                         </div>
                                     </div>                              
                                     {{-- <div class="col-sm-6"> --}}
@@ -497,7 +497,7 @@
     <script src="{{asset('assetsadmin/js/jquery-2.1.1.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
-        // $('#borang').DataTables();
+        $('borang').DataTables();
         $( document ).ready(function() {
             // $('#myModal').modal('show');
             // cekAkun();

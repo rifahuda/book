@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
-
+use Session;
 use App\Http\Controllers\Controller;
 
 
@@ -63,7 +63,9 @@ class LoginController extends Controller {
 				$request->session()->regenerate();
 				$request->session()->forget('user');
 				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_uniqid', $value->u_uniqid)->first());
-					
+
+				// $x=Session::get('user');
+				// dd($request->session()->get('user')->u_name,$x);					
 
 				return redirect()->intended('dashboard');
 			}
