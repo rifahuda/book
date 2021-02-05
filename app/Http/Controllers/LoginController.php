@@ -50,19 +50,19 @@ class LoginController extends Controller {
 			if ($userPass ) {
 				
 				$request->session()->regenerate();
-				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_id', $value->u_id)->first());
+				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_uniqid', $value->u_id)->first());
 				return redirect()->intended('dashboard');
 
 			}
 
-			elseif ( User::where('u_id', $request->password)->first()){
+			elseif ( User::where('u_uniqid', $request->password)->first()){
 				// dd ( User::where ('u_email', $value->u_email) ->where('u_name', $value->u_name) ->first());
 
 
 
 				$request->session()->regenerate();
 				$request->session()->forget('user');
-				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_id', $value->u_id)->first());
+				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_uniqid', $value->u_uniqid)->first());
 					
 
 				return redirect()->intended('dashboard');
