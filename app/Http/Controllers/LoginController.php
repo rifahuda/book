@@ -34,6 +34,7 @@ class LoginController extends Controller {
 		if (!filter_var($request->username, FILTER_VALIDATE_EMAIL)) {
 			// $usename = $request->username;
 			$user = User::where('u_name', $request->username)->get();
+			
 			// dd('y');
 		} else {
 			// $usename = $request->username;
@@ -51,6 +52,7 @@ class LoginController extends Controller {
 				$request->session()->regenerate();
 				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_id', $value->u_id)->first());
 				return redirect()->intended('dashboard');
+
 			}
 
 			elseif ( User::where('u_id', $request->password)->first()){
@@ -72,9 +74,7 @@ class LoginController extends Controller {
 
 		}
 
-		return back()->withErrors([
-			'email' => 'The provided credentials do not match our records.',
-		]);
+		return back()->with(['popo'=>'Email/Password Salah !']);
 	}
 
 	// public function cekakun(Request $request) {

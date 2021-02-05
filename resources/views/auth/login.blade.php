@@ -28,16 +28,27 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('{{asset('assets/images/bg-01.jpg')}}');">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
                 <form class="login100-form validate-form" action="{{url('login')}}" method="POST">
+
                     @csrf
 					<span class="login100-form-title p-b-49">
 						Login
 					</span>
-
+					@if(session('popo'))
+					<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <strong>Email / Password Salah !</strong>
+                    </div>
+					@endif
+<!-- 
+					<div style="margin-left:120px;">
+{{Session::get('popo')}}
+</div> -->
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is required">
 						<span class="label-input100">Username / Email</span>
 						<input class="input100" type="text" name="username" placeholder="Type your Email">
@@ -64,6 +75,11 @@
 								</button>
 							</div>
 						</div>
+
+
+
+													
+
 							<!-- 
 												<div class="txt1 text-center p-t-54 p-b-20">
 													<span>
