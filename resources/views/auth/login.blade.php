@@ -36,7 +36,7 @@
 
                     @csrf
 					<span class="login100-form-title p-b-49">
-						LOGIN
+						Login
 					</span>
 					@if(session('popo'))
 					<div class="alert alert-danger alert-dismissible fade show" role="alert">
