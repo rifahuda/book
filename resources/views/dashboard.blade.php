@@ -571,26 +571,26 @@
         <!-- App js -->
         <script src="{{asset('codefox/js/app.min.js')}}"></script>
 
-        <script src="codefox/libs/datatables/jquery.dataTables.min.js {{asset('')}}"></script>
-        <script src="codefox/libs/datatables/dataTables.bootstrap4.min.js {{asset('')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/jquery.dataTables.min.js')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/dataTables.bootstrap4.min.js')}}"></script>
 
-        <script src="codefox/libs/datatables/dataTables.responsive.min.js {{asset('')}}"></script>
-        <script src="codefox/libs/datatables/responsive.bootstrap4.min.js {{asset('')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/dataTables.responsive.min.js')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/responsive.bootstrap4.min.js')}}"></script>
 
-        <script src="codefox/libs/datatables/dataTables.buttons.min.js {{asset('')}}"></script>
-        <script src="codefox/libs/datatables/buttons.bootstrap4.min.js {{asset('')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/dataTables.buttons.min.js')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/buttons.bootstrap4.min.js')}}"></script>
 
-        <script src="codefox/libs/datatables/buttons.html5.min.js {{asset('')}}"></script>
-        <script src="codefox/libs/datatables/buttons.print.min.js {{asset('')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/buttons.html5.min.js')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/buttons.print.min.js')}}"></script>
 
-        <script src="codefox/libs/datatables/dataTables.keyTable.min.js {{asset('')}}"></script>
-        <script src="codefox/libs/datatables/dataTables.fixedHeader.min.js {{asset('')}}"></script>
-        <script src="codefox/libs/datatables/dataTables.scroller.min.js {{asset('')}}"></script>
-        <script src="codefox/libs/datatables/dataTables.colVis.js {{asset('')}}"></script>
-        <script src="codefox/libs/datatables/dataTables.fixedColumns.min.js {{asset('')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/dataTables.keyTable.min.js')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/dataTables.fixedHeader.min.js')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/dataTables.scroller.min.js')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/dataTables.colVis.js')}}"></script>
+        <script src=" {{asset('codefox/libs/datatables/dataTables.fixedColumns.min.js')}}"></script>
 
        
-        <script src="codefox/js/pages/datatables.init.js {{asset('')}}"></script>
+        <script src=" {{asset('codefox/js/pages/datatables.init.js')}}"></script>
         
         
     </body>
