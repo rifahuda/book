@@ -136,12 +136,14 @@
 	<script src="{{asset('assets/vendor/countdowntime/countdowntime.js')}}"></script>
 <!--===============================================================================================-->
 	<script src="{{asset('assets/js/main.js')}}"></script>
-
-	$.ajaxSetup({
+	<script>
+		$.ajaxSetup({
     headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
     }
 	});
+	</script>
+
 
 </body>
 </html>
