@@ -168,7 +168,7 @@
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapseOneOne" class="collapse" data-parent="#accordion-test" style="">
+                                        <div id="collapseOneOne" class="collapse" data-parent="#accordion-test" >
                                             <div class="card-body">
 
                                         <div class="col-lg">
@@ -245,7 +245,7 @@
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapseOneTwo" class="collapse" data-parent="#accordion-test" style="">
+                                        <div id="collapseOneTwo" class="collapse" data-parent="#accordion-test" >
                                             <div class="card-body">
                                             
                                             
@@ -308,7 +308,7 @@
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapseOneThree" class="collapse" data-parent="#accordion-test" style="">
+                                        <div id="collapseOneThree" class="collapse" data-parent="#accordion-test" >
                                             <div class="card-body">
                                                 <p class="mb-0">Template</p>
                                                 <p class="mb-0">Template</p>
@@ -325,7 +325,7 @@
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapseOneFour" class="collapse" data-parent="#accordion-test" style="">
+                                        <div id="collapseOneFour" class="collapse" data-parent="#accordion-test" >
                                             <div class="card-body">
                                                 <p class="mb-0">Play Card</p>
                                                 <p class="mb-0">Play Card</p>
@@ -344,7 +344,7 @@
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapseOneFive" class="collapse" data-parent="#accordion-test" style="">
+                                        <div id="collapseOneFive" class="collapse" data-parent="#accordion-test">
                                             <div class="card-body" >
                                             
                                             <!--                                             
@@ -398,7 +398,7 @@
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapseTwo" class="collapse" data-parent="#accordion-test" style="">
+                                        <div id="collapseTwo" class="collapse" data-parent="#accordion-test" >
                                             <div class="card-body">
                                                 <p class="mb-0">service</p>
                                             </div>
@@ -438,10 +438,12 @@
                                         <label class="col-md-2 col-form-label" for="simpleinput">Username</label>
                                         <div class="col-md-10">
                                         <input type="text" id="username" class="form-control" value="{{Session::get('user')->u_name}}">
+                                        <!-- <input type="text" id="username" class="form-control" value=""> -->
+
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="staticEmail" class="col-md-2 col-form-label">Password</label>
+                                        <label for="simpleinput" class="col-md-2 col-form-label">Password</label>
                                         <div class="col-md-10">
                                             <input type="password" class="form-control" id="password" >
                                         </div>
@@ -473,7 +475,7 @@
                             <div class="head justify-content-between" >  
                                 <img class="icon-colored " style="margin-left:230px;" alt="" src="assets/images/icons/ok.svg"  title="ok.svg">
                                 <h3 style="text-align:center;">Berhasil Ditambah</h3>
-                            </div>      
+                </div>      
         
         
         
@@ -503,7 +505,7 @@
             // cekAkun();
         });
         function cekAkun(){
-            axios.get('{{route('cekakun')}}', {
+            axios.get("{{route('cekakun')}}", {
             })
             .then(function (response) {
                 if(response.status == 200){
@@ -518,7 +520,7 @@
             });
         }
         function register(){
-            axios.post('{{route('register')}}', {
+            axios.post("{{route('register')}}", {
                 username: $('#username').val(),
                 password: $('#password').val(),
           

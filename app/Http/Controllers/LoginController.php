@@ -2,7 +2,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use DB;
+// use DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -12,6 +12,7 @@ use App\Http\Controllers\Controller;
 
 
 use App\Exports\UserExport;
+use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Facades\Excel;
 
 class LoginController extends Controller {
@@ -34,7 +35,7 @@ class LoginController extends Controller {
 		if (!filter_var($request->username, FILTER_VALIDATE_EMAIL)) {
 			// $usename = $request->username;
 			$user = User::where('u_name', $request->username)->get();
-			
+
 			// dd('y');
 		} else {
 			// $usename = $request->username;
@@ -50,7 +51,7 @@ class LoginController extends Controller {
 			if ($userPass ) {
 				
 				$request->session()->regenerate();
-				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_uniqid', $value->u_id)->first());
+				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_uniqid', $value->u_uniqid)->first());
 				return redirect()->intended('dashboard');
 
 			}
@@ -100,7 +101,7 @@ class LoginController extends Controller {
 	 */
 	public function store(Request $request) {
 		$userId = $request->session()->get('user')->u_email;
-
+		
 		DB::Begintransaction();
 		try {
 			$update = User::find($userId);
@@ -127,6 +128,7 @@ class LoginController extends Controller {
 			return $th;
 		}
 	}
+
 
 
 	public function tampil()
