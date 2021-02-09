@@ -46,10 +46,7 @@
                         <strong>Email / Password Salah !</strong>
                     </div>
 					@endif
-<!-- 
-					<div style="margin-left:120px;">
-{{Session::get('popo')}}
-</div> -->
+
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is required">
 						<span class="label-input100">Username / Email</span>
 						<input class="input100" type="text" name="username" placeholder="Type your Email">

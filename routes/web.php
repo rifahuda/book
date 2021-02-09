@@ -32,6 +32,7 @@ Route::get('logout',[LoginController::class, 'logout'])->name('logout');
 
 Route::get('dashboard',[LoginController::class, 'tampil']);
 Route::get('oke',[LoginController::class, 'export_excel']);
+// Route::get('cari',[LoginController::class, 'cari']);
 
 
 // Route::get('dashboard',function(){

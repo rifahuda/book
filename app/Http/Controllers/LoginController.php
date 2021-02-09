@@ -131,11 +131,31 @@ class LoginController extends Controller {
 
 
 
+
+
+
+	// public function cari(Request $request)
+	// {
+	// 	//menangkap data pencarian
+	// 	$cari = $request->cari;
+
+	// 	//ambil data tabel
+	// 	$user = DB::table('d_user')
+	// 	->where('u_name','like',"%".$cari."%")
+	// 	->paginate();
+
+	// 	//kirim data pegawai ke dashboard
+	// 	return view('dashboard',['user'=>$user]);
+
+	// }
+
 	public function tampil()
 	{
-		$user = User::all();
+		// $user = User::all();
+		$user = DB::table('d_user')->paginate(10);
 		return view('dashboard',['user'=>$user]);
 	}
+	
  
 	public function export_excel()
 	{

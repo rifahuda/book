@@ -254,21 +254,8 @@
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
 
-
-
-                                                <!-- <div class="col-sm-12 col-md-6">
-                                                <div id="borang" class="dataTables_filter">
-                                                <label>Search:
-                                                <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="datatable">
-                                                </label>
-                                                </div>
-                                                </div>  -->
-
-
-
-
-                                                 <!-- <div class="table-responsive">
-                                                            <table class="table m-0 table-colored-bordered table-bordered-info" id="borang">
+                                                  <!-- <div class="table-responsive">
+                                                            <table class="table m-0 table-colored-bordered table-bordered-info" id="datatable-responsive">
                                                             <thead>
                                                                 <tr>
                                                                     <th>No</th>
@@ -293,11 +280,15 @@
                                                             
                                                             </tbody>
                                                         </table>
-                                                </div>                                                  -->
+                                                </div>                                                   -->
                                       </div>
-                                       <!-- <a href="{{url('oke')}}">                                   
+                                       
+                                       <!--download excel-->
+                                        <!-- <a href="{{url('oke')}}">                                   
                                                 <button type="button" style="margin-bottom:30px;" class="btn btn-success waves-effect waves-light">Download</button>
-                                       </a> -->
+                                       </a>  -->
+
+
                                         </div>
                                         <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
                                             <h4 class="card-title font-14 mb-0">
@@ -497,7 +488,7 @@
     <script src="{{asset('assetsadmin/js/jquery-2.1.1.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
-        $('borang').DataTables();
+        $('datatable-responsive').DataTables();
         $( document ).ready(function() {
             // $('#myModal').modal('show');
             // cekAkun();
