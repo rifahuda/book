@@ -20,15 +20,13 @@
         <link href="{{asset('codefox/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
         <link href="{{asset('codefox/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('codefox/css/app.min.css')}}" rel="stylesheet" type="text/css"  id="app-stylesheet" />
-
-
-        <link href="codefox/libs/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css {{asset('')}}" />
-        <link href="codefox/libs/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css {{asset('')}}" />
-        <link href="codefox/libs/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css {{asset('')}}" />
-        <link href="codefox/libs/datatables/fixedHeader.bootstrap4.min.css" rel="stylesheet" type="text/css {{asset('')}}" />
-        <link href="codefox/libs/datatables/scroller.bootstrap4.min.css" rel="stylesheet" type="text/css {{asset('')}}" />
-        <link href="codefox/libs/datatables/dataTables.colVis.css" rel="stylesheet" type="text/css {{asset('')}}" />
-        <link href="codefox/libs/datatables/fixedColumns.bootstrap4.min.css" rel="stylesheet" type="text/css {{asset('')}}" />
+        <link href="{{asset('codefox/libs/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet" type="text/css " />
+        <link href=" {{asset('codefox/libs/datatables/responsive.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('codefox/libs/datatables/buttons.bootstrap4.min.css')}}" rel="stylesheet" type="text/css " />
+        <link href="{{asset('codefox/libs/datatables/fixedHeader.bootstrap4.min.css')}}" rel="stylesheet" type="text/css " />
+        <link href="{{asset('codefox/libs/datatables/scroller.bootstrap4.min.css')}}" rel="stylesheet" type="text/css " />
+        <link href="{{asset('codefox/libs/datatables/dataTables.colVis.css')}}" rel="stylesheet" type="text/css " />
+        <link href="{{asset('codefox/libs/datatables/fixedColumns.bootstrap4.min.css')}}" rel="stylesheet" type="text/css " />
 
 
 
