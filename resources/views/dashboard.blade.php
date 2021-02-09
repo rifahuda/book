@@ -387,10 +387,10 @@
 
 
                             
-                            <div class="card mb-2">
+                            <div class="card mb-2"  >
                                         <!-- <div class="card-header bg-primary" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> -->
                                    
-                                        <div class="card-header" style="background:#0d335d!important"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <div class="card-header" style="background:#0d335d!important;"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 
                                             <h4 class="card-title font-14 mb-0">
                                                 <a href="#" class="text-white collapsed">
