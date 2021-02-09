@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Book</title>
+        <title>mahirfinansial.com</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -29,7 +29,7 @@
         <link href="{{asset('codefox/libs/datatables/fixedColumns.bootstrap4.min.css')}}" rel="stylesheet" type="text/css " />
 
 
-
+        <link href="{{asset('codefox/libs/nestable2/jquery.nestable.min.cssm ')}}" rel="stylesheet" />
 
     </head>
 
@@ -44,7 +44,7 @@
                 <!-- Topbar Start -->
                 <div class="navbar-custom">
                     <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
-                    <h3 class="text-white">Selamat Datang di Website Book</h3>
+                    <h3 class="text-white">Selamat Datang di Website : Mahir Finansial</h3>
                         <ul class="list-unstyled topnav-menu float-right mb-0">
 
                             <li class="dropdown notification-list">
@@ -145,104 +145,112 @@
                         <!-- end row -->
                         <div class="row justify-content-center text-center" style="margin-top:30px;">
                             <div class="col-lg-10">
-                            
-                  
-                                <div class="accordion" id="accordion-test" >
-                                    <div class="card mb-2">
-                                        <!-- <div class="card-header bg-primary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" > -->
-                                        <div class="card-header" style="background:#0d335d !important" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" >
 
-                                            <h4 class="card-title font-14 mb-0">
-                                                <a href="#" class="text-white collapsed" >
-                                                    REFRENSI
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseOne" class="collapse">
-                                        <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
-                                            <h4 class="card-title font-14 mb-0">
-                                                <a href="#" class="text-white collapsed" >
-                                                    Link Refrensi
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseOneOne" class="collapse" data-parent="#accordion-test" >
-                                            <div class="card-body">
+                     
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                        
+                                            <h2 class="mt-0 mb-3"><p><strong>Mahir Finasial</strong></p></h2>
 
-                                        <div class="col-lg">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                  
-                                                            <p class="mb-0">Refrensi</p>
-                                                            <p class="mb-0">Refrensi</p>
-                                                            <p class="mb-0">Refrensi</p>
-                                                            <p class="mb-0">Refrensi</p>
-                                                            <p class="mb-0">Refrensi</p>
-                                                            <p class="mb-0">Refrensi</p>
-                                                    
+                                            <div class="accordion" id="accordion-test" >
+                                                <div class="card mb-2">
+                                                     <!-- <div class="card-header bg-primary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" > -->
+                                                        <div class="card-header" style="background:#0d335d !important" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" >
 
-                                                    <!-- <div class="table-responsive">
-                                                            <table class="table m-0 table-colored-bordered table-bordered-info">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>No</th>
-                                                                    <th>Nama</th>
-                                                                    <th>Sumber</th>
-                                                                    <th>Link</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <th scope="row">1</th>
-                                                                    <td>Panda</td>
-                                                                    <td>Wikipedia</td>
-                                                                    <td><a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a></td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <th scope="row">2</th>
-                                                                    <td>Harimau</td>
-                                                                    <td>Wikipedia</td>
-                                                                    <td><a href="https://en.wikipedia.org/wiki/Harimau">Harimau</a></td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <th scope="row">3</th>
-                                                                    <td>Buaya</td>
-                                                                    <td>Wikipedia</td>
-                                                                    <td><a href="https://en.wikipedia.org/wiki/Buaya">Buaya</a></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <th scope="row">4</th>
-                                                                    <td>Jerapah</td>
-                                                                    <td>Wikipedia</td>
-                                                                    <td><a href="https://en.wikipedia.org/wiki/Giraffe">Jerapah</a></td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <th scope="row">5</th>
-                                                                    <td>Singa</td>
-                                                                    <td>Wikipedia</td>
-                                                                    <td><a href="https://en.wikipedia.org/wiki/Singa">Singa</a></td>
-                                                                </tr>
-                                                            
-                                                            </tbody>
-                                                        </table>
-                                                    </div> 
-                                                 -->
+                                                        <h4 class="card-title font-14 mb-0">
+                                                            <a href="#" class="text-white collapsed" >
+                                                                REFRENSI
+                                                            </a>
+                                                        </h4>
                                                 </div>
-                                            </div>
-                                        </div>
-                                            </div>
-                                        </div>
+                                                <div id="collapseOne" class="collapse">
+                                                    <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
+                                                        <h4 class="card-title font-14 mb-0">
+                                                            <a href="#" class="text-white collapsed" >
+                                                                Link Refrensi
+                                                            </a>
+                                                        </h4>
+                                                </div>
+                                                <div id="collapseOneOne" class="collapse" data-parent="#accordion-test" >
+                                                    <div class="card-body">
 
-                                        <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
-                                            <h4 class="card-title font-14 mb-0">
-                                                <a href="#" class="text-white collapsed" >
-                                                    Borang
-                                                </a>
-                                            </h4>
-                                        </div>
+                                                        <div class="col-lg">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                
+                                                                            <p class="mb-0">Refrensi</p>
+                                                                            <p class="mb-0">Refrensi</p>
+                                                                            <p class="mb-0">Refrensi</p>
+                                                                            <p class="mb-0">Refrensi</p>
+                                                                            <p class="mb-0">Refrensi</p>
+                                                                            <p class="mb-0">Refrensi</p>
+                                                                    
+
+                                                                    <!-- <div class="table-responsive">
+                                                                            <table class="table m-0 table-colored-bordered table-bordered-info">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>No</th>
+                                                                                    <th>Nama</th>
+                                                                                    <th>Sumber</th>
+                                                                                    <th>Link</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <th scope="row">1</th>
+                                                                                    <td>Panda</td>
+                                                                                    <td>Wikipedia</td>
+                                                                                    <td><a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a></td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <th scope="row">2</th>
+                                                                                    <td>Harimau</td>
+                                                                                    <td>Wikipedia</td>
+                                                                                    <td><a href="https://en.wikipedia.org/wiki/Harimau">Harimau</a></td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <th scope="row">3</th>
+                                                                                    <td>Buaya</td>
+                                                                                    <td>Wikipedia</td>
+                                                                                    <td><a href="https://en.wikipedia.org/wiki/Buaya">Buaya</a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row">4</th>
+                                                                                    <td>Jerapah</td>
+                                                                                    <td>Wikipedia</td>
+                                                                                    <td><a href="https://en.wikipedia.org/wiki/Giraffe">Jerapah</a></td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <th scope="row">5</th>
+                                                                                    <td>Singa</td>
+                                                                                    <td>Wikipedia</td>
+                                                                                    <td><a href="https://en.wikipedia.org/wiki/Singa">Singa</a></td>
+                                                                                </tr>
+                                                                            
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div> 
+                                                                -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        </div>
+                                                        </div>
+
+                                                        <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
+                                                            <h4 class="card-title font-14 mb-0">
+                                                                <a href="#" class="text-white collapsed" >
+                                                                    Borang
+                                                                </a>
+                                                            </h4>
+                                                        </div>
                                         <div id="collapseOneTwo" class="collapse" data-parent="#accordion-test" >
                                             <div class="card-body">
                                             
@@ -253,8 +261,8 @@
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
                                                 <p class="mb-0">Borang</p>
-
-                                                  <!-- <div class="table-responsive">
+<!-- 
+                                                    <div class="table-responsive">
                                                             <table class="table m-0 table-colored-bordered table-bordered-info" id="datatable-responsive">
                                                             <thead>
                                                                 <tr>
@@ -264,26 +272,27 @@
                                                                     <th>Unik</th>
                                                                 </tr>
                                                             </thead>
-                                                            <tbody>
-                                                            
+                                                            <tbody>                                                           
                                                             @php $i=1 @endphp
                                                             @foreach($user as $s)
                                                                 <tr>
                                                                     <th scope="row">{{$i++}}</th>
                                                                     <td>{{$s->u_name}}</td>
                                                                     <td>{{$s->u_email}}</td>
-                                                                    <td>{{$s->u_uniqid}}</td>
-                                                                    
+                                                                    <td>{{$s->u_uniqid}}</td>                                                                  
                                                                 </tr>
                                                             @endforeach
                                         
                                                             
                                                             </tbody>
                                                         </table>
-                                                </div>                                                   -->
+                                                    </div>                                                   -->
                                       </div>
                                        
-                                       <!--download excel-->
+
+
+
+                                       <!-- download excel-->
                                         <!-- <a href="{{url('oke')}}">                                   
                                                 <button type="button" style="margin-bottom:30px;" class="btn btn-success waves-effect waves-light">Download</button>
                                        </a>  -->
@@ -374,9 +383,11 @@
                                         </div>
                             </div>
                             </div>
-                                   
-                                    
-                                    <div class="card mb-2">
+
+
+
+                            
+                            <div class="card mb-2">
                                         <!-- <div class="card-header bg-primary" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> -->
                                    
                                         <div class="card-header" style="background:#0d335d!important"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -393,6 +404,34 @@
                                             </div>
                                         </div>
                                     </div>
+
+
+                                        
+                                        </div>
+                                    
+                                    </div>
+
+
+
+                        <!-- <div class="row" style="margin-left: 20px;">
+                            <div class="col-lg-12">
+                                <div class="text-left" id="nestable_list_menu">
+                                    <button type="button" class="btn btn-pink waves-effect mb-3 mr-1 waves-light" data-action="expand-all">Expand All</button>
+                                    <button type="button" class="btn btn-purple waves-effect mb-3 waves-light" data-action="collapse-all">Collapse All</button>
+                                </div>
+                            </div> 
+                        </div> -->
+                                
+                            </div>
+                            
+                     
+                            
+                        </div>
+
+                  
+                              
+                                   
+                                    
                                   
                                 </div>
                              
@@ -408,7 +447,7 @@
 
 
 
-                    <!--baru-->
+                <!--baru-->
 
                 <div id="myModal" class="modal fade" role="dialog" style="padding:50px;">
                     <div class="modal-dialog" >
@@ -485,46 +524,49 @@
                 
 
     {{-- Modal --}}
-    <script src="{{asset('assetsadmin/js/jquery-2.1.1.js')}}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script>
-        $('datatable-responsive').DataTables();
-        $( document ).ready(function() {
-            // $('#myModal').modal('show');
-            // cekAkun();
-        });
-        function cekAkun(){
-            axios.get("{{route('cekakun')}}", {
-            })
-            .then(function (response) {
-                if(response.status == 200){
-                   if(response.data.akun == false){
-                        $('#myModal').modal('show');
-                   } 
+            <script src="{{asset('assetsadmin/js/jquery-2.1.1.js')}}"></script>
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+            <script>
+                $('datatable-responsive').DataTables();
+                $('nestable_list_menu').NesTable();
+
+                
+                $( document ).ready(function() {
+                    // $('#myModal').modal('show');
+                    // cekAkun();
+                });
+                function cekAkun(){
+                    axios.get("{{route('cekakun')}}", {
+                    })
+                    .then(function (response) {
+                        if(response.status == 200){
+                        if(response.data.akun == false){
+                                $('#myModal').modal('show');
+                        } 
+                        }
+                    
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
                 }
-               
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-        }
-        function register(){
-            axios.post("{{route('register')}}", {
-                username: $('#username').val(),
-                password: $('#password').val(),
-          
-            })
-            .then(function (response) {
-                console.log(response);
-                $('#formregist')[0].reset();
-                $('#myModal').modal('hide');
-                $('#success_tic').modal('show');
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-        }
-    </script>
+                function register(){
+                    axios.post("{{route('register')}}", {
+                        username: $('#username').val(),
+                        password: $('#password').val(),
+                
+                    })
+                    .then(function (response) {
+                        console.log(response);
+                        $('#formregist')[0].reset();
+                        $('#myModal').modal('hide');
+                        $('#success_tic').modal('show');
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+                }
+            </script>
 
             </div>
 
@@ -582,6 +624,13 @@
 
        
         <script src=" {{asset('codefox/js/pages/datatables.init.js')}}"></script>
+
+
+        <!-- Nestable Plugins js-->
+        <script src=" {{asset('codefox/libs/nestable2/jquery.nestable.min.js')}}"></script>
+
+        <!-- Nestable init-->
+        <script src="{{asset('codefox/js/pages/nestable.init.js')}}"></script>
         
         
     </body>
