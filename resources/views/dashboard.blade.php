@@ -152,7 +152,7 @@
                                     <div class="card">
                                         <div class="card-body">
                                         
-                                            <h2 class="mt-0 mb-3"><p><strong>Mahir Finasial</strong></p></h2>
+                                            <h2 class="mt-0 mb-3"><p><strong>Mahir Finansial</strong></p></h2>
 
                                             <div class="accordion" id="accordion-test" >
                                                 <div class="card mb-2">
