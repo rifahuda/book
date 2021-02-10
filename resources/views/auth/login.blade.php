@@ -33,7 +33,6 @@
 		<div class="container-login100" style="background-image: url('{{asset('assets/images/bg-01.jpg')}}');">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
                 <form class="login100-form validate-form" action="{{url('login')}}" method="POST">
-
                     @csrf
 					<span class="login100-form-title p-b-49">
 						Login
@@ -63,8 +62,7 @@
 							<a href="#">
 								
 							</a>
-					</div> 
-						
+					</div> 						
 						<div class="container-login100-form-btn">
 							<div class="wrap-login100-form-btn">
 								<div class="login100-form-bgbtn"></div>
