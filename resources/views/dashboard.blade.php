@@ -153,6 +153,11 @@
                                         <div class="card-body">
                                         
                                             <h2 class="mt-0 mb-3"><p><strong>Mahir Finansial</strong></p></h2>
+                                            <!-- <div class="col-lg-3 mb-3">
+                                                <div class="grid-container">
+                                                <h2><strong>Mahir Finansial</strong>  </h2>
+                                                </div>
+                                            </div> -->
 
                                             <div class="accordion" id="accordion-test" >
                                                 <div class="card mb-2">
