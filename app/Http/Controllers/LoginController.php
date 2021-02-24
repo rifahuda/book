@@ -2,14 +2,18 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+// use DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+
+use Session;
 use App\Http\Controllers\Controller;
+
+
 use App\Exports\UserExport;
 use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Facades\Excel;
-use Session;
-use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller {
 	/**
@@ -28,7 +32,7 @@ class LoginController extends Controller {
 
 
 
-		if (!filter_var($request->username)) {
+		if (!filter_var($request->username, FILTER_VALIDATE_EMAIL)) {
 			// $usename = $request->username;
 			$user = User::where('u_name', $request->username)->get();
 
@@ -44,7 +48,8 @@ class LoginController extends Controller {
 			// $userPass = User::where($request->password, $value->u_id);
 
 			
-			if ($userPass ) {				
+			if ($userPass ) {
+				
 				$request->session()->regenerate();
 				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_uniqid', $value->u_uniqid)->first());
 				return redirect()->intended('dashboard');
@@ -53,11 +58,16 @@ class LoginController extends Controller {
 
 			elseif ( User::where('u_uniqid', $request->password)->first()){
 				// dd ( User::where ('u_email', $value->u_email) ->where('u_name', $value->u_name) ->first());
+
+
+
 				$request->session()->regenerate();
 				$request->session()->forget('user');
 				$request->session()->put('user', User::where('u_email', $value->u_email)->where('u_uniqid', $value->u_uniqid)->first());
+
 				// $x=Session::get('user');
 				// dd($request->session()->get('user')->u_name,$x);					
+
 				return redirect()->intended('dashboard');
 			}
 			// if (Auth::attempt(['u_email' => $request->username, 'password' => $request->password])) {
