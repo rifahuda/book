@@ -129,11 +129,6 @@ class LoginController extends Controller {
 		}
 	}
 
-
-
-
-
-
 	// public function cari(Request $request)
 	// {
 	// 	//menangkap data pencarian

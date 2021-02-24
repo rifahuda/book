@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 
 Route::get('register',[LoginController::class, 'create']);
-Route::get('cekakun',[LoginController::class, 'cekakun'])->name('cekakun');
+// Route::get('cekakun',[LoginController::class, 'cekakun'])->name('cekakun');
 Route::post('register',[LoginController::class, 'store'])->name('register');
 
 Route::post('login',[LoginController::class, 'authenticate']);
