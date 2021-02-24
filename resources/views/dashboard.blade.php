@@ -143,215 +143,207 @@
                                                                 </a>
                                                             </h4>
                                                         </div>                                                   
-                                                        <!--Menu 1, Link Refrensi-->
-                                                        <div id="collapseOne" class="collapse">
-                                                            <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
-                                                                <h4 class="card-title font-14 mb-0">
-                                                                    <a href="#" class="text-white collapsed" >
-                                                                        Link Refrensi
-                                                                    </a>
-                                                                </h4>
-                                                        </div>
-                                                        
-                                                            <!--Menu , Isi Link Refrensi-->
-                                                        <div id="collapseOneOne" class="collapse" data-parent="#accordion-test" >
-                                                                <div class="card-body">
-                                                                    <div class="col-lg">
-                                                                        <div class="card">
-                                                                            <div class="card-body">    
-                                                                                <p class="mb-0">Refrensi</p>
-                                                                                <p class="mb-0">Refrensi</p>
-                                                                                <p class="mb-0">Refrensi</p>
-                                                                                <p class="mb-0">Refrensi</p>
-                                                                                <p class="mb-0">Refrensi</p>
-                                                                                <p class="mb-0">Refrensi</p>
-                                                                                        
-                                                                                <!--tabel statis-->
-                                                                                <!-- <div class="table-responsive">
-                                                                                    <table class="table m-0 table-colored-bordered table-bordered-info">
-                                                                                        <thead>
-                                                                                            <tr>
-                                                                                                <th>No</th>
-                                                                                                <th>Nama</th>
-                                                                                                <th>Sumber</th>
-                                                                                                <th>Link</th>
-                                                                                            </tr>
-                                                                                        </thead>
-                                                                                        
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <th scope="row">1</th>
-                                                                                                <td>Panda</td>
-                                                                                                <td>Wikipedia</td>
-                                                                                                <td><a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a></td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <th scope="row">2</th>
-                                                                                                <td>Harimau</td>
-                                                                                                <td>Wikipedia</td>
-                                                                                                <td><a href="https://en.wikipedia.org/wiki/Harimau">Harimau</a></td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <th scope="row">3</th>
-                                                                                                <td>Buaya</td>
-                                                                                                <td>Wikipedia</td>
-                                                                                                <td><a href="https://en.wikipedia.org/wiki/Buaya">Buaya</a></td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <th scope="row">4</th>
-                                                                                                <td>Jerapah</td>
-                                                                                                <td>Wikipedia</td>
-                                                                                                <td><a href="https://en.wikipedia.org/wiki/Giraffe">Jerapah</a></td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <th scope="row">5</th>
-                                                                                                <td>Singa</td>
-                                                                                                <td>Wikipedia</td>
-                                                                                                <td><a href="https://en.wikipedia.org/wiki/Singa">Singa</a></td>
-                                                                                            </tr>                                                                            
-                                                                                        </tbody>
-                                                                                    </table>
-                                                                                </div>  -->
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
+                                                            <!--Menu , Link Refrensi-->
+                                                            <div id="collapseOne" class="collapse">
+                                                                <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white" data-toggle="collapse" data-target="#collapseOneOne" aria-expanded="false" >
+                                                                    <h4 class="card-title font-14 mb-0">
+                                                                        <a href="#" class="text-white collapsed" >
+                                                                            Link Refrensi
+                                                                        </a>
+                                                                    </h4>
                                                                 </div>
-                                                            </div>                                                      
-                                                            <!--Menu , Borang-->
-                                                            <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
-                                                                <h4 class="card-title font-14 mb-0">
-                                                                    <a href="#" class="text-white collapsed" >
-                                                                        Borang
-                                                                    </a>
-                                                                </h4>
-                                                            </div>
-                                                            <!--Menu , Isi Borang-->
-                                                            <div id="collapseOneTwo" class="collapse" data-parent="#accordion-test" >
-                                                                <div class="card-body">
-                                                                
-                                                                
-                                                                    <p class="mb-0">Borang</p>
-                                                                    <p class="mb-0">Borang</p>
-                                                                    <p class="mb-0">Borang</p>
-                                                                    <p class="mb-0">Borang</p>
-                                                                    <p class="mb-0">Borang</p>
-                                                                    <p class="mb-0">Borang</p>
-                                                                    
-                                                                    <!--tabel user-->
-                                                                    <!-- <div class="table-responsive">
-                                                                                <table class="table m-0 table-colored-bordered table-bordered-info" id="datatable-responsive">
-                                                                                <thead>
-                                                                                    <tr>
-                                                                                        <th>No</th>
-                                                                                        <th>Nama</th>
-                                                                                        <th>Email</th>
-                                                                                        <th>Unik</th>
-                                                                                    </tr>
-                                                                                </thead>
-                                                                                <tbody>                                                           
-                                                                                @php $i=1 @endphp
-                                                                                @foreach($user as $s)
-                                                                                    <tr>
-                                                                                        <th scope="row">{{$i++}}</th>
-                                                                                        <td>{{$s->u_name}}</td>
-                                                                                        <td>{{$s->u_email}}</td>
-                                                                                        <td>{{$s->u_uniqid}}</td>                                                                  
-                                                                                    </tr>
-                                                                                @endforeach
                                                             
-                                                                                
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </div>                                                   -->
+                                                                <!--Menu , Isi Link Refrensi-->
+                                                                <div id="collapseOneOne" class="collapse" data-parent="#accordion-test" >                                                                 
+                                                                                <div class="card-body">    
+                                                                                    <p class="mb-0">Refrensi</p>
+                                                                                    <p class="mb-0">Refrensi</p>
+                                                                                    <p class="mb-0">Refrensi</p>
+                                                                                    <p class="mb-0">Refrensi</p>
+                                                                                    <p class="mb-0">Refrensi</p>
+                                                                                    <p class="mb-0">Refrensi</p>                                                                                          
+                                                                                    <!--tabel statis-->
+                                                                                    <!-- <div class="table-responsive">
+                                                                                        <table class="table m-0 table-colored-bordered table-bordered-info">
+                                                                                            <thead>
+                                                                                                <tr>
+                                                                                                    <th>No</th>
+                                                                                                    <th>Nama</th>
+                                                                                                    <th>Sumber</th>
+                                                                                                    <th>Link</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <th scope="row">1</th>
+                                                                                                    <td>Panda</td>
+                                                                                                    <td>Wikipedia</td>
+                                                                                                    <td><a href="https://en.wikipedia.org/wiki/Giant_panda">Giant Panda</a></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <th scope="row">2</th>
+                                                                                                    <td>Harimau</td>
+                                                                                                    <td>Wikipedia</td>
+                                                                                                    <td><a href="https://en.wikipedia.org/wiki/Harimau">Harimau</a></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <th scope="row">3</th>
+                                                                                                    <td>Buaya</td>
+                                                                                                    <td>Wikipedia</td>
+                                                                                                    <td><a href="https://en.wikipedia.org/wiki/Buaya">Buaya</a></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <th scope="row">4</th>
+                                                                                                    <td>Jerapah</td>
+                                                                                                    <td>Wikipedia</td>
+                                                                                                    <td><a href="https://en.wikipedia.org/wiki/Giraffe">Jerapah</a></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <th scope="row">5</th>
+                                                                                                    <td>Singa</td>
+                                                                                                    <td>Wikipedia</td>
+                                                                                                    <td><a href="https://en.wikipedia.org/wiki/Singa">Singa</a></td>
+                                                                                                </tr>                                                                            
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>  -->
+                                                                                </div>                                   
+                                                                </div>                                                      
+                                                                <!--Menu , Borang-->
+                                                                <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneTwo" aria-expanded="false" >
+                                                                    <h4 class="card-title font-14 mb-0">
+                                                                        <a href="#" class="text-white collapsed" >
+                                                                            Borang
+                                                                        </a>
+                                                                    </h4>
                                                                 </div>
-                                                                <!-- download excel-->
-                                                                <!-- <a href="{{url('oke')}}">                                   
-                                                                        <button type="button" style="margin-bottom:30px;" class="btn btn-success waves-effect waves-light">Download</button>
-                                                                </a>  -->
-                                                            </div>
-                                                            <!--Menu , Template-->
-                                                            <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
-                                                                <h4 class="card-title font-14 mb-0">
-                                                                    <a href="#" class="text-white collapsed" >
-                                                                        Template
-                                                                    </a>
-                                                                </h4>
-                                                            </div>
-                                                            <!--Menu , Isi Template-->
-                                                            <div id="collapseOneThree" class="collapse" data-parent="#accordion-test" >
-                                                                <div class="card-body">
-                                                                    <p class="mb-0">Template</p>
-                                                                    <p class="mb-0">Template</p>
-                                                                    <p class="mb-0">Template</p>
-                                                                    <p class="mb-0">Template</p>
-                                                                    <p class="mb-0">Template</p>
-                                                                    <p class="mb-0">Template</p>
-                                                                </div>
-                                                            </div>
-                                                            <!--Menu , PlayCard-->
-                                                            <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneFour" aria-expanded="false" >
-                                                                <h4 class="card-title font-14 mb-0">
-                                                                    <a href="#" class="text-white collapsed" >
-                                                                        Play Card
-                                                                    </a>
-                                                                </h4>
-                                                            </div>
-                                                            <!--Menu , Isi Playcard-->
-                                                            <div id="collapseOneFour" class="collapse" data-parent="#accordion-test" >
-                                                                <div class="card-body">
-                                                                    <p class="mb-0">Play Card</p>
-                                                                    <p class="mb-0">Play Card</p>
-                                                                    <p class="mb-0">Play Card</p>
-                                                                    <p class="mb-0">Play Card</p>
-                                                                    <p class="mb-0">Play Card</p>
-                                                                    <p class="mb-0">Play Card</p>
-                                                                </div>
-                                                            </div>
-                                                            <!--Menu , Video-->
-                                                            <div class="card-header bg-primary"style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneFive" aria-expanded="false" >
-
-                                                                <h4 class="card-title font-14 mb-0">
-                                                                    <a href="#" class="text-white collapsed" >
-                                                                        Video
-                                                                    </a>
-                                                                </h4>
-                                                            </div>
-                                                            <!--Menu , Isi Video-->
-                                                            <div id="collapseOneFive" class="collapse" data-parent="#accordion-test">
-                                                                <div class="card-body" >                                                                                    
-                                                                    <!--tampil gambar lokal-->
-                                                                        <!-- <div class="col-sm-4">
-                                                                            <img src="assets/images/bg-01.jpg" alt="image" class="img-fluid rounded" width="200">
-                                                                            <p class="mb-0">
-                                                                                <code>.rounded</code>
-                                                                            </p>
-                                                                        </div> -->
-                                                                            
-                                                                    <!-- url('{{asset('assets/images/bg-01.jpg')}}'); -->
+                                                                <!--Menu , Isi Borang-->
+                                                                <div id="collapseOneTwo" class="collapse" data-parent="#accordion-test" >
+                                                                    <div class="card-body">
                                                                     
-                                                                    <!--Video Lokal-->
-                                                                    <!-- <div class="col-lg6">
-                                                                        <div class="card">
-                                                                            <div class="card-body">
-                                                                                <h4 class="head justify-content-between">Local Video</h4>                                                            
-                                                                                <video width="1400px" height="700px" controls>
-                                                                                        <source src="assets/videos/careful.mp4" type="video/mp4">
-                                                                                        <source src="mov_bbb.ogg" type="video/ogg">
-                                                                                </video>                                                       
-                                                                            </div>                                                    
-                                                                        </div>                                                   
-                                                                    </div> -->
+                                                                    
+                                                                        <p class="mb-0">Borang</p>
+                                                                        <p class="mb-0">Borang</p>
+                                                                        <p class="mb-0">Borang</p>
+                                                                        <p class="mb-0">Borang</p>
+                                                                        <p class="mb-0">Borang</p>
+                                                                        <p class="mb-0">Borang</p>
+                                                                        
+                                                                        <!--tabel user-->
+                                                                        <!-- <div class="table-responsive">
+                                                                                    <table class="table m-0 table-colored-bordered table-bordered-info" id="datatable-responsive">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>No</th>
+                                                                                            <th>Nama</th>
+                                                                                            <th>Email</th>
+                                                                                            <th>Unik</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>                                                           
+                                                                                    @php $i=1 @endphp
+                                                                                    @foreach($user as $s)
+                                                                                        <tr>
+                                                                                            <th scope="row">{{$i++}}</th>
+                                                                                            <td>{{$s->u_name}}</td>
+                                                                                            <td>{{$s->u_email}}</td>
+                                                                                            <td>{{$s->u_uniqid}}</td>                                                                  
+                                                                                        </tr>
+                                                                                    @endforeach
+                                                                
+                                                                                    
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>                                                   -->
+                                                                    </div>
+                                                                    <!-- download excel-->
+                                                                    <!-- <a href="{{url('oke')}}">                                   
+                                                                            <button type="button" style="margin-bottom:30px;" class="btn btn-success waves-effect waves-light">Download</button>
+                                                                    </a>  -->
+                                                                </div>
+                                                                <!--Menu , Template-->
+                                                                <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneThree" aria-expanded="false" >
+                                                                    <h4 class="card-title font-14 mb-0">
+                                                                        <a href="#" class="text-white collapsed" >
+                                                                            Template
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <!--Menu , Isi Template-->
+                                                                <div id="collapseOneThree" class="collapse" data-parent="#accordion-test" >
+                                                                    <div class="card-body">
+                                                                        <p class="mb-0">Template</p>
+                                                                        <p class="mb-0">Template</p>
+                                                                        <p class="mb-0">Template</p>
+                                                                        <p class="mb-0">Template</p>
+                                                                        <p class="mb-0">Template</p>
+                                                                        <p class="mb-0">Template</p>
+                                                                    </div>
+                                                                </div>
+                                                                <!--Menu , PlayCard-->
+                                                                <div class="card-header bg-primary" style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneFour" aria-expanded="false" >
+                                                                    <h4 class="card-title font-14 mb-0">
+                                                                        <a href="#" class="text-white collapsed" >
+                                                                            Play Card
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <!--Menu , Isi Playcard-->
+                                                                <div id="collapseOneFour" class="collapse" data-parent="#accordion-test" >
+                                                                    <div class="card-body">
+                                                                        <p class="mb-0">Play Card</p>
+                                                                        <p class="mb-0">Play Card</p>
+                                                                        <p class="mb-0">Play Card</p>
+                                                                        <p class="mb-0">Play Card</p>
+                                                                        <p class="mb-0">Play Card</p>
+                                                                        <p class="mb-0">Play Card</p>
+                                                                    </div>
+                                                                </div>
+                                                                <!--Menu , Video-->
+                                                                <div class="card-header bg-primary"style="background: #1a508b !important; border:0.5px solid white"  data-toggle="collapse" data-target="#collapseOneFive" aria-expanded="false" >
 
-                                                                    <p class="mb-0">Video</p>
-                                                                    <p class="mb-0">Video</p>
-                                                                    <p class="mb-0">Video</p>
-                                                                    <p class="mb-0">Video</p>
-                                                                    <p class="mb-0">Video</p>
-                                                                    <p class="mb-0">Video</p>
+                                                                    <h4 class="card-title font-14 mb-0">
+                                                                        <a href="#" class="text-white collapsed" >
+                                                                            Video
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <!--Menu , Isi Video-->
+                                                                <div id="collapseOneFive" class="collapse" data-parent="#accordion-test">
+                                                                    <div class="card-body" >                                                                                    
+                                                                        <!--tampil gambar lokal-->
+                                                                            <!-- <div class="col-sm-4">
+                                                                                <img src="assets/images/bg-01.jpg" alt="image" class="img-fluid rounded" width="200">
+                                                                                <p class="mb-0">
+                                                                                    <code>.rounded</code>
+                                                                                </p>
+                                                                            </div> -->
+                                                                                
+                                                                        <!-- url('{{asset('assets/images/bg-01.jpg')}}'); -->
+                                                                        
+                                                                        <!--Video Lokal-->
+                                                                        <!-- <div class="col-lg6">
+                                                                            <div class="card">
+                                                                                <div class="card-body">
+                                                                                    <h4 class="head justify-content-between">Local Video</h4>                                                            
+                                                                                    <video width="1400px" height="700px" controls>
+                                                                                            <source src="assets/videos/careful.mp4" type="video/mp4">
+                                                                                            <source src="mov_bbb.ogg" type="video/ogg">
+                                                                                    </video>                                                       
+                                                                                </div>                                                    
+                                                                            </div>                                                   
+                                                                        </div> -->
+
+                                                                        <p class="mb-0">Video</p>
+                                                                        <p class="mb-0">Video</p>
+                                                                        <p class="mb-0">Video</p>
+                                                                        <p class="mb-0">Video</p>
+                                                                        <p class="mb-0">Video</p>
+                                                                        <p class="mb-0">Video</p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
                                                     </div><!--menu 1-->
                                                         <!--Menu 2, service-->
                                                     <div class="card mb-2"  >      
@@ -372,15 +364,7 @@
                                                 </div><!--accordion-->                                  
                                             </div><!--card body-->        
                                         </div><!-- card-->
-                                            <!--Nestable-->
-                                            <!-- <div class="row" style="margin-left: 20px;">
-                                            <div class="col-lg-12">
-                                                <div class="text-left" id="nestable_list_menu">
-                                                    <button type="button" class="btn btn-pink waves-effect mb-3 mr-1 waves-light" data-action="expand-all">Expand All</button>
-                                                    <button type="button" class="btn btn-purple waves-effect mb-3 waves-light" data-action="collapse-all">Collapse All</button>
-                                                </div>
-                                            </div> 
-                                            </div> -->
+                                          
                                     </div><!--col lg 12-->
                                 </div><!--row-->   
                             </div> <!-- col lg 10 -->
