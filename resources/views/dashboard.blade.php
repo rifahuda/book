@@ -123,7 +123,7 @@
                             <div class="col-lg-10">
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="card">
+                                        <div class="card" style="border-radius: 10px;">
                                             <div class="card-body">
                                                 <h2 class="mt-0 mb-3"><p><strong>Mahir Finansial</strong></p></h2>
                                                     <!-- <div class="col-lg-3 mb-3">
@@ -132,9 +132,9 @@
                                                         </div>
                                                     </div> -->
 
-                                                <div class="accordion" id="accordion-test" style="border-radius:10;">
+                                                <div class="accordion" id="accordion-test" >
                                                     <!--Menu 1,  Refrensi-->
-                                                    <div class="card mb-2" >
+                                                    <div class="card mb-2" style="border-radius: 10px;" >
                                                                 
                                                         <div class="card-header" style="background:#0d335d !important" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" >
                                                             <h4 class="card-title font-14 mb-0">
@@ -352,7 +352,7 @@
                                                             </div>
                                                     </div><!--menu 1-->
                                                         <!--Menu 2, service-->
-                                                    <div class="card mb-2"  >      
+                                                    <div class="card mb-2" style="border-radius: 10px;"  >      
                                                            <div class="card-header" style="background:#0d335d!important;"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                                 <h4 class="card-title font-14 mb-0">
                                                                     <a href="#" class="text-white collapsed">
