@@ -144,19 +144,19 @@ class LoginController extends Controller {
 
 	// }
 
-	public function tampil()
-	{
-		// $user = User::all();
-		$user = DB::table('d_user')->paginate(10);
-		return view('dashboard',['user'=>$user]);
-	}
+	// public function tampil()
+	// {
+	// 	// $user = User::all();
+	// 	$user = DB::table('d_user')->paginate(10);
+	// 	return view('dashboard',['user'=>$user]);
+	// }
 	
  
-	public function export_excel()
-	{
-		return Excel::download(new UserExport, 'User.xlsx');
+	// public function export_excel()
+	// {
+	// 	return Excel::download(new UserExport, 'User.xlsx');
 		
-	}
+	// }
 
 
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ExcelController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\NamaController;
@@ -30,8 +31,12 @@ Route::get('logout',[LoginController::class, 'logout'])->name('logout');
 
 
 
-Route::get('dashboard',[LoginController::class, 'tampil']);
-Route::get('oke',[LoginController::class, 'export_excel']);
+// Route::get('dashboard',[LoginController::class, 'tampil']);
+// Route::get('oke',[LoginController::class, 'export_excel']);
+
+
+Route::get('dashboard',[ExcelController::class, 'tampil']);
+Route::get('oke',[ExcelController::class, 'export_excel']);
 // Route::get('cari',[LoginController::class, 'cari']);
 
 

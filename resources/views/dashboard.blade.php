@@ -33,14 +33,13 @@
 
     </head>
 
-    <body data-layout="horizontal"  >
-
+    <body data-layout="horizontal">
         <!-- Begin page -->
-        <div id="wrapper">
+        <div id="wrapper" >
             <!-- Navigation Bar-->
             <header id="topnav">
                 <!-- Topbar Start -->
-                <div class="navbar-custom">
+                <div class="navbar-custom" style="background-color: black;">
                     <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
                         <h3 class="text-white">Selamat Datang di Website : Mahir Finansial</h3>
                             <ul class="list-unstyled topnav-menu float-right mb-0">
@@ -101,7 +100,8 @@
             <!-- Start Page Content here -->
             <!-- ============================================================== -->
 
-            <div class="content-page">
+            <div class="content-page" style="background: transparent;">
+               
                 <div class="content"> 
                     <!-- Start Content-->
                     <div class="container-fluid">
@@ -132,9 +132,9 @@
                                                         </div>
                                                     </div> -->
 
-                                                <div class="accordion" id="accordion-test" >
+                                                <div class="accordion" id="accordion-test" style="border-radius:10;">
                                                     <!--Menu 1,  Refrensi-->
-                                                    <div class="card mb-2">
+                                                    <div class="card mb-2" >
                                                                 
                                                         <div class="card-header" style="background:#0d335d !important" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" >
                                                             <h4 class="card-title font-14 mb-0">
@@ -255,7 +255,7 @@
                                                                                     
                                                                                     </tbody>
                                                                                 </table>
-                                                                        </div>                                                   -->
+                                                                        </div> -->
                                                                     </div>
                                                                     <!-- download excel-->
                                                                     <!-- <a href="{{url('oke')}}">                                   
@@ -319,6 +319,12 @@
                                                                                     <code>.rounded</code>
                                                                                 </p>
                                                                             </div> -->
+                                                                            <!--gambar lokal tengah-->
+                                                                            <!-- <div class="row justify-content-center" style="margin-top: 20px;">
+                                                                                <img src="assets/images/bg-01.jpg" alt="image" class="img-fluid rounded" width="200">
+                                                                                
+                                                                            
+                                                                            </div> -->
                                                                                 
                                                                         <!-- url('{{asset('assets/images/bg-01.jpg')}}'); -->
                                                                         
@@ -371,6 +377,11 @@
                         </div> <!--row justify content--> 
                     </div><!-- end container-fluid -->  
                 </div> <!-- end content -->
+                
+
+                
+              
+               
             </div> <!-- end content page -->
 
 
